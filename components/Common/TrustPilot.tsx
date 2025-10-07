@@ -1,0 +1,42 @@
+"use client"
+import { trustPilotScript } from '@/lib/utils';
+import Link from 'next/link';
+import React, { useEffect } from 'react';
+
+const TrustPilot = () => {
+  useEffect(() => {
+    // Check if the Trustpilot script already exists
+    if (!document.querySelector(`script[src="${trustPilotScript}"]`)) {
+      const script = document.createElement('script');
+      script.src = trustPilotScript;
+      script.async = true;
+      document.head.appendChild(script);
+
+      return () => {
+        // Clean up the script if the component unmounts
+        document.head.removeChild(script);
+      };
+    }
+  }, []);
+
+  return (
+    <div
+      className="trustpilot-widget"
+      data-locale="en-US"
+      data-template-id="56278e9abfbbba0bdcd568bc"
+      data-businessunit-id="672c5e98bfd7b10d2662ee4e"
+      data-style-height="52px"
+      data-style-width="100%"
+    >
+      <Link
+        href="https://www.trustpilot.com/review/rentalconfirmation.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Trustpilot
+      </Link>
+    </div>
+  );
+};
+
+export default TrustPilot;
