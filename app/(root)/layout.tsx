@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
-import { Analytics } from "@vercel/analytics/next"
 import { ReduxProvider } from "@/lib/store/provider"
 import { siteConfig } from "@/lib/config"
 import { Suspense } from "react"
@@ -25,7 +24,6 @@ export default function RootLayout({
         <HeroSection />
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
       </ReduxProvider>
-      <Analytics />
     </main>
   )
 }
