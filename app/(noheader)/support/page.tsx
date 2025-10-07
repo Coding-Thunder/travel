@@ -1,17 +1,15 @@
 "use client"
 
 import type React from "react"
-
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert"
 import { siteConfig } from "@/lib/config"
-import { useState } from "react"
 
 export default function SupportPage() {
   const [formData, setFormData] = useState({
@@ -21,15 +19,19 @@ export default function SupportPage() {
     message: "",
   })
 
+  const [submitted, setSubmitted] = useState(false)
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    alert("Thank you for contacting us! We'll get back to you soon.")
+    setSubmitted(true)
     setFormData({ name: "", email: "", subject: "", message: "" })
+
+    // Hide alert after 5 seconds
+    setTimeout(() => setSubmitted(false), 5000)
   }
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-800 to-blue-800 text-white py-16">
@@ -110,7 +112,17 @@ export default function SupportPage() {
               </div>
 
               {/* Contact Form */}
-              <div className="lg:col-span-2">
+              <div className="lg:col-span-2 space-y-4">
+                {/* Success Alert */}
+                {submitted && (
+                  <Alert className="bg-green-100 border-green-400 text-green-800">
+                    <AlertTitle>We've received your query!</AlertTitle>
+                    <AlertDescription>
+                      Expect to be contacted soon. Thank you so much.
+                    </AlertDescription>
+                  </Alert>
+                )}
+
                 <Card>
                   <CardContent className="p-8">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
@@ -173,7 +185,6 @@ export default function SupportPage() {
           </div>
         </section>
       </main>
-      
     </div>
   )
 }

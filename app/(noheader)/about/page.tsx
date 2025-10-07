@@ -1,5 +1,3 @@
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
 import { Card, CardContent } from "@/components/ui/card"
 import { Shield, Users, Globe, Award } from "lucide-react"
 import { siteConfig } from "@/lib/config"
@@ -7,7 +5,6 @@ import { siteConfig } from "@/lib/config"
 export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-800 to-blue-800 text-white py-16">
@@ -111,7 +108,7 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      
+
     </div>
   )
 }

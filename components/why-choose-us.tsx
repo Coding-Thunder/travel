@@ -26,7 +26,7 @@ const features = [
   {
     icon: Clock,
     title: "24/7 Support",
-    description: "Our customer support team is always here to help you",
+    description: "Our customer support team is always here to help you with easy refunds",
     color: "text-purple-600",
     bgColor: "bg-purple-50",
   },

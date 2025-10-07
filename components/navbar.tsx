@@ -15,6 +15,7 @@ import {
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
+import { siteConfig } from "@/lib/config"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,19 +36,19 @@ export function Navbar() {
             <div className="bg-primary p-2 rounded-lg group-hover:scale-105 transition-transform duration-200">
               <Plane className="h-5 w-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900 tracking-tight">TravelBooking</span>
+            <span className="text-xl font-bold text-gray-900 tracking-tight">{siteConfig.brand.name}</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
-            <Link href="/available-flights">
+            <Link href="/about">
               <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
-                Flights
+                About us
               </Button>
             </Link>
-            <Link href="/cars">
+            <Link href="/support">
               <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
-                Cars
+                Contact
               </Button>
             </Link>
             <Link href="/destinations">
