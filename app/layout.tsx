@@ -29,7 +29,6 @@ export default function RootLayout({
           <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
           <Footer />
         </ReduxProvider>
-        <Analytics />
       </body>
     </html>
   )
