@@ -42,7 +42,7 @@ const deals = [
     description: "Book a standard car and get upgraded to luxury class for free!",
     discount: "FREE UPGRADE",
     validUntil: "Jul 31, 2024",
-    image: "/mercedes-s-class.png",
+    image: "/mercedes.png",
     category: "Cars",
   },
   {
