@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin, Plane, Mail, Phone, MapPin } from "lucide-react"
 import { siteConfig } from "@/lib/config"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -9,11 +10,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Section */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="bg-primary p-2 rounded-lg">
-                <Plane className="h-5 w-5 text-primary-foreground" />
+            <div className="w-fit h-fit">
+
+              {/* Text Logo */}   <div className="relative w-32 h-32">
+                <Image
+                  src="/logo3.png"
+                  alt="Logo"
+                  fill
+                />
               </div>
-              <span className="text-xl font-bold text-white">{siteConfig.brand.name}</span>
             </div>
             <p className="text-sm mb-6 leading-relaxed text-slate-400">
               Your trusted partner for travel bookings worldwide. Experience seamless booking with the best prices.
