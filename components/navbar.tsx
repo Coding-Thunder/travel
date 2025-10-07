@@ -16,6 +16,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { Menu } from "lucide-react"
 import { useState } from "react"
 import { siteConfig } from "@/lib/config"
+import Image from "next/image"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,11 +33,15 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="bg-primary p-2 rounded-lg group-hover:scale-105 transition-transform duration-200">
-              <Plane className="h-5 w-5 text-white" />
+          <Link href="/" className="flex items-center gap-3 group">
+
+            {/* Text Logo */}   <div className="relative w-32 h-32">
+              <Image
+                src="/logo3.png"
+                alt="Logo"
+                fill
+              />
             </div>
-            <span className="text-xl font-bold text-gray-900 tracking-tight">{siteConfig.brand.name}</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -127,27 +132,31 @@ export function Navbar() {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px] px-4">
                 <SheetHeader>
-                  <SheetTitle className="flex items-center gap-2.5">
-                    <div className="bg-primary p-2 rounded-lg">
-                      <Plane className="h-5 w-5 text-white" />
+                  <SheetTitle className="flex items-center gap-2">
+
+                    {/* Text Logo */}   <div className="relative w-32 h-32">
+                      <Image
+                        src="/logo3.png"
+                        alt="Logo"
+                        fill
+                      />
                     </div>
-                    TravelBooking
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-4 mt-8">
                   <Link
-                    href="/available-flights"
+                    href="/about"
                     className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    Flights
+                    About us
                   </Link>
                   <Link
-                    href="/cars"
+                    href="/support"
                     className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
-                    Cars
+                    Contact us
                   </Link>
                   <Link
                     href="/destinations"
