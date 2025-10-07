@@ -1,7 +1,7 @@
 import { config } from "@/lib/config"
 import axios, { type AxiosInstance } from "axios"
 
-const baseURL = process.env.NODE_ENV === "production" ? config.productionServerUrl : config.localServerUrl
+const baseURL = config.productionServerUrl
 
 export const publicAxiosInstance: AxiosInstance = axios.create({
   baseURL,
