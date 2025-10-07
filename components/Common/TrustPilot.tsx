@@ -29,7 +29,7 @@ const TrustPilot = () => {
       data-style-width="100%"
     >
       <Link
-        href="https://www.trustpilot.com/review/rentalconfirmation.com"
+        href="https://www.trustpilot.com/review/budgettravels4u.com"
         target="_blank"
         rel="noopener noreferrer"
       >

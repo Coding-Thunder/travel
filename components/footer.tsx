@@ -14,7 +14,7 @@ export function Footer() {
 
               {/* Text Logo */}   <div className="relative w-32 h-32">
                 <Image
-                  src="/logo3.png"
+                  src="/logowhite.png"
                   alt="Logo"
                   fill
                 />
