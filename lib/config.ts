@@ -1,8 +1,8 @@
 export const siteConfig = {
   brand: {
-    name: "Rental Confirmation",
-    domain: "rentalconfirmation.com",
-    email: "support@rentalconfirmation.com",
+    name: "Budget Travels4u",
+    domain: "budgettravels4u.com",
+    email: "support@budgettravels4u.com",
     phone: "+1-855-761-6979",
     phoneLink: "+18557616979",
     location: "Wyoming, United States",
