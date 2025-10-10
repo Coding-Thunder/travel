@@ -22,11 +22,7 @@ const TrustPilot = () => {
   return (
     <div
       className="trustpilot-widget"
-      data-locale="en-US"
-      data-template-id="56278e9abfbbba0bdcd568bc"
-      data-businessunit-id="672c5e98bfd7b10d2662ee4e"
-      data-style-height="52px"
-      data-style-width="100%"
+      data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="68e91008d254d19b908f61ed" data-style-height="52px" data-style-width="100%" data-token="dc7ccbcb-3930-4e13-8909-71ca6550fa65"
     >
       <Link
         href="https://www.trustpilot.com/review/budgettravels4u.com"
