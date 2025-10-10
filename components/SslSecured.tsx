@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import ssl from "@/public/svg/ssl.svg";
+import { Button } from './ui/button';
 
 const SslSecured = () => {
     const router = useRouter()
@@ -21,12 +22,12 @@ const SslSecured = () => {
             <p className="text-center text-gray-500 mb-4">
                 This ensures that your personal information is encrypted and safe.
             </p>
-            <button
+            <Button
                 onClick={() => router.push(routings.terms_and_conditions)}
                 className="text-blue-800 hover:underline focus:outline-none transition duration-300 ease-in-out text-sm font-medium"
             >
                 Learn more about our privacy policy
-            </button>
+            </Button>
         </div>)
 }
 

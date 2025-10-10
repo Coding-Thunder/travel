@@ -106,7 +106,7 @@ export default function SearchCar() {
     const fetch = async () => {
       setLoadingPickup(true)
       try {
-        const { data } = await api.searchLocations({ keyword: pickupQuery })
+        const { data }: any = await api.searchLocations({ keyword: pickupQuery })
         const mapped = (data.data || []).map((item: any) => ({
           iataCode: item.iataCode || item.name,
           name: item.name,
@@ -139,7 +139,7 @@ export default function SearchCar() {
     const fetch = async () => {
       setLoadingDrop(true)
       try {
-        const { data } = await api.searchLocations({ keyword: dropQuery })
+        const { data }: any = await api.searchLocations({ keyword: dropQuery })
         const mapped = (data.data || []).map((item: any) => ({
           iataCode: item.iataCode || item.name,
           name: item.name,
@@ -248,7 +248,7 @@ export default function SearchCar() {
             <div className="flex-1">
               <Popover open={pickupOpen} onOpenChange={setPickupOpen}>
                 <PopoverTrigger asChild>
-                  <button
+                  <Button
                     type="button"
                     className="w-full h-full bg-white hover:bg-gray-50 rounded-lg flex items-center gap-2.5 px-4 py-3 transition-colors text-left border border-gray-200 hover:border-gray-300"
                   >
@@ -259,7 +259,7 @@ export default function SearchCar() {
                         {selectedPickup ? selectedPickup.address.cityName : "Select"}
                       </p>
                     </div>
-                  </button>
+                  </Button>
                 </PopoverTrigger>
                 <PopoverContent side="bottom" align="start" className="w-80 p-3">
                   <div className="flex items-center gap-2 border border-gray-200 rounded-lg px-3 py-2.5 mb-2">
@@ -277,7 +277,7 @@ export default function SearchCar() {
                       <p className="text-sm text-gray-500 text-center py-4">Loading...</p>
                     ) : pickupResults.length > 0 ? (
                       pickupResults.map((loc) => (
-                        <button
+                        <Button
                           key={loc.iataCode}
                           type="button"
                           onClick={() => {
@@ -291,7 +291,7 @@ export default function SearchCar() {
                           <p className="text-xs text-gray-500">
                             {loc.address.cityName}, {loc.address.countryCode}
                           </p>
-                        </button>
+                        </Button>
                       ))
                     ) : (
                       <p className="text-sm text-gray-500 text-center py-4">No results</p>
@@ -310,7 +310,7 @@ export default function SearchCar() {
             <div className="flex-1">
               <Popover open={dropOpen} onOpenChange={setDropOpen}>
                 <PopoverTrigger asChild>
-                  <button
+                  <Button
                     type="button"
                     className="w-full h-full bg-white hover:bg-gray-50 rounded-lg flex items-center gap-2.5 px-4 py-3 transition-colors text-left border border-gray-200 hover:border-gray-300"
                   >
@@ -321,7 +321,7 @@ export default function SearchCar() {
                         {selectedDrop ? selectedDrop.address.cityName : "Select"}
                       </p>
                     </div>
-                  </button>
+                  </Button>
                 </PopoverTrigger>
                 <PopoverContent side="bottom" align="start" className="w-80 p-3">
                   <div className="flex items-center gap-2 border border-gray-200 rounded-lg px-3 py-2.5 mb-2">
@@ -339,7 +339,7 @@ export default function SearchCar() {
                       <p className="text-sm text-gray-500 text-center py-4">Loading...</p>
                     ) : dropResults.length > 0 ? (
                       dropResults.map((loc) => (
-                        <button
+                        <Button
                           key={loc.iataCode}
                           type="button"
                           onClick={() => {
@@ -353,7 +353,7 @@ export default function SearchCar() {
                           <p className="text-xs text-gray-500">
                             {loc.address.cityName}, {loc.address.countryCode}
                           </p>
-                        </button>
+                        </Button>
                       ))
                     ) : (
                       <p className="text-sm text-gray-500 text-center py-4">No results</p>
@@ -369,7 +369,7 @@ export default function SearchCar() {
             <div className="flex-1 lg:w-44">
               <Popover open={dateOpen} onOpenChange={setDateOpen}>
                 <PopoverTrigger asChild>
-                  <button
+                  <Button
                     type="button"
                     className="w-full h-full bg-white hover:bg-gray-50 rounded-xl flex items-center gap-2.5 px-4 py-3 border border-gray-200 hover:border-gray-300 transition-colors text-left"
                   >
@@ -380,7 +380,7 @@ export default function SearchCar() {
                         {travelDate ? format(travelDate, "MMM dd") : "Select"}
                       </p>
                     </div>
-                  </button>
+                  </Button>
                 </PopoverTrigger>
                 <PopoverContent side="bottom" align="start" className="w-auto p-0">
                   <Calendar
@@ -403,7 +403,7 @@ export default function SearchCar() {
             <div className="flex-1 lg:w-36">
               <Popover open={timeOpen} onOpenChange={setTimeOpen}>
                 <PopoverTrigger asChild>
-                  <button
+                  <Button
                     type="button"
                     className="w-full h-full bg-white hover:bg-gray-50 rounded-xl flex items-center gap-2.5 px-4 py-3 border border-gray-200 hover:border-gray-300 transition-colors text-left"
                   >
@@ -412,7 +412,7 @@ export default function SearchCar() {
                       <p className="text-xs font-semibold text-gray-500 mb-0.5">Time</p>
                       <p className="text-sm font-semibold text-gray-900">{format(travelTime, "hh:mm a")}</p>
                     </div>
-                  </button>
+                  </Button>
                 </PopoverTrigger>
                 <PopoverContent side="bottom" align="start" className="w-auto p-3">
                   <input

@@ -8,6 +8,7 @@ import { Suspense } from "react"
 import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import CallPopUp from "@/components/CallPopUp"
 
 export const metadata: Metadata = {
   title: `${siteConfig.brand.name} - Travel Booking Made Easy`,
@@ -22,12 +23,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} z-40 antialiased`}>
         <ReduxProvider>
           <Navbar />
           <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
           <Footer />
         </ReduxProvider>
+        <CallPopUp />
+
       </body>
     </html>
   )

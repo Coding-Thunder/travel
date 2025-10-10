@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
+    // Disable linting during the build process
     ignoreDuringBuilds: true,
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+  //   images: {
+  //     unoptimized: true,
+  //   },
+};
 
-export default nextConfig
+export default nextConfig;

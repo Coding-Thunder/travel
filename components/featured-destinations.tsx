@@ -46,9 +46,9 @@ export function FeaturedDestinations() {
               <CardContent className="p-6">
                 <p className="text-gray-600 mb-6 leading-relaxed text-pretty">{destination.description}</p>
                 <div className="w-fit mx-auto">
-                  <Link className="mx-auto" href="/available-flights">
-                  <CallNow />
-                </Link>
+                  {/* <Link className="mx-auto" href="/available-flights"> */}
+                    <CallNow />
+                  {/* </Link> */}
                 </div>
               </CardContent>
             </Card>

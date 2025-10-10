@@ -1,6 +1,7 @@
 // app/no-flights/page.tsx
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import { Button } from './ui/button';
 
 const NoFlightsAvailable = () => {
 
@@ -12,12 +13,12 @@ const NoFlightsAvailable = () => {
                 <p className="mt-4 text-gray-500">
                     We couldn&apos;t find any flights matching your search criteria. Please try adjusting your filters.
                 </p>
-                <button 
+                <Button
                     className="mt-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-800"
                     onClick={() => router.back()} // Go back to the previous page
                 >
                     Go Back
-                </button>
+                </Button>
             </div>
         </div>
     );

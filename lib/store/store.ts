@@ -5,6 +5,7 @@ import adminReducer from "./slices/adminSlice"
 import flightsReducer from "./slices/flightslice"
 import tripReducer from "./slices/tripSlice"
 import carReducer from "./slices/carSlice"
+import hotelReducer from "./slices/hotelSlice"
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,8 @@ export const store = configureStore({
     flights: flightsReducer,
     trip: tripReducer,
     car: carReducer,
+    hotel: hotelReducer
+
   },
 })
 

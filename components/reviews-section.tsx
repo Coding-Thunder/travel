@@ -8,32 +8,29 @@ const reviews = [
   {
     id: 1,
     name: "Sarah Johnson",
-    role: "Business Traveler",
     rating: 5,
-    text: "Amazing service! Booked my flight and rental car in minutes. The prices were unbeatable and customer support was excellent.",
+    text: "Booked a hotel and flight for my business trip through BudgetTravels4U. Everything was smooth and prices were competitive. The OTA platform made it super easy!",
   },
   {
     id: 2,
     name: "Michael Chen",
-    role: "Frequent Flyer",
     rating: 5,
-    text: "Best travel booking platform I have used. Everything was smooth from search to confirmation. Highly recommend!",
+    text: "Used BudgetTravels4U to book multiple flights and hotels. The booking process was seamless, and I received instant confirmations for all my reservations. Highly recommend this OTA!",
   },
   {
     id: 3,
     name: "Emily Rodriguez",
-    role: "Vacation Planner",
     rating: 4,
-    text: "Great experience overall. Found exactly what I needed at competitive prices. Will definitely use again for my next trip.",
+    text: "Found amazing hotel deals and flights for my family vacation on BudgetTravels4U. The OTA interface is intuitive, and the support team helped me with cancellations and modifications.",
   },
   {
     id: 4,
     name: "David Thompson",
-    role: "Corporate Travel Manager",
     rating: 5,
-    text: "Impressed with the variety of options and the ease of booking. The interface is intuitive and the deals are fantastic.",
+    text: "Booked flights and multiple hotel rooms for our corporate team via BudgetTravels4U. As an OTA, they made managing group bookings and payment hassle-free.",
   },
-]
+];
+
 
 export function ReviewsSection() {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -70,16 +67,15 @@ export function ReviewsSection() {
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star
                       key={i}
-                      className={`h-5 w-5 ${
-                        i < review.rating ? "fill-yellow-400 text-yellow-400" : "fill-muted text-muted"
-                      }`}
+                      className={`h-5 w-5 ${i < review.rating ? "fill-yellow-400 text-yellow-400" : "fill-muted text-muted"
+                        }`}
                     />
                   ))}
                 </div>
                 <p className="text-foreground/90 leading-relaxed mb-6 text-pretty">{review.text}</p>
                 <div className="border-t border-border/50 pt-4">
                   <h4 className="font-semibold text-foreground">{review.name}</h4>
-                  <p className="text-sm text-muted-foreground">{review.role}</p>
+                  {/* <p className="text-sm text-muted-foreground">{review.role}</p> */}
                 </div>
               </CardContent>
             </Card>
@@ -92,9 +88,8 @@ export function ReviewsSection() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all ${
-                index === currentIndex ? "w-8 bg-primary" : "w-2 bg-border hover:bg-primary/50"
-              }`}
+              className={`h-2 rounded-full transition-all ${index === currentIndex ? "w-8 bg-primary" : "w-2 bg-border hover:bg-primary/50"
+                }`}
               aria-label={`Go to review ${index + 1}`}
             />
           ))}

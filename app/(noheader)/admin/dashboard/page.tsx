@@ -22,6 +22,7 @@ import {
 import apiService from "@/lib/api/api-service"
 import TimeFormatter from "@/components/TimeFormatter"
 import ReadableTimestamp from "@/components/RedableTimeStamp"
+import { Button } from "@/components/ui/button"
 
 // --- INTERFACES ---
 interface UnifiedBooking {
@@ -285,15 +286,15 @@ export default function AdminDashboardPage() {
 
                 {/* Pagination Controls */}
                 <div className="flex justify-between items-center mt-6">
-                  <button onClick={handlePrev} disabled={page === 1} className="flex items-center gap-1 px-3 py-1.5 rounded-md border bg-white text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors">
+                  <Button onClick={handlePrev} disabled={page === 1} className="flex items-center gap-1 px-3 py-1.5 rounded-md border bg-white text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors">
                     <ChevronLeft size={16} /> Prev
-                  </button>
+                  </Button>
                   <p className="text-sm text-gray-600">
                     Page <span className="font-semibold">{page}</span> of <span className="font-semibold">{totalPages}</span>
                   </p>
-                  <button onClick={handleNext} disabled={page === totalPages} className="flex items-center gap-1 px-3 py-1.5 rounded-md border bg-white text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors">
+                  <Button onClick={handleNext} disabled={page === totalPages} className="flex items-center gap-1 px-3 py-1.5 rounded-md border bg-white text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors">
                     Next <ChevronRight size={16} />
-                  </button>
+                  </Button>
                 </div>
               </>
             )}

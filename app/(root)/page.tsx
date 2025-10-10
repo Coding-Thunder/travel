@@ -1,4 +1,3 @@
-import { Footer } from "@/components/footer"
 import { FeaturedDestinations } from "@/components/featured-destinations"
 import { WhyChooseUs } from "@/components/why-choose-us"
 import { ReviewsSection } from "@/components/reviews-section"

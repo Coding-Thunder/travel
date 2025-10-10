@@ -170,3 +170,18 @@ export interface HotelBookingDetails {
     }
   }>
 }
+
+
+export interface Hotel {
+  hotelId: string;
+  name: string;
+  address: string;
+  city: string;
+  postalCode?: string;
+  countryCode?: string;
+  latitude?: number;
+  longitude?: number;
+  chainCode?: string;
+  isSponsored?: boolean;
+  stars?: number;
+}

@@ -1,18 +1,17 @@
-import { publicAxiosInstance } from "./axios-config"
+import { toast } from "sonner"
 import endpoints from "./endpoints"
 import type {
   EXISTING_USER_LOGIN,
   REGISTER_A_NEW_USER,
   FlightSearchParams,
   TransferOfferParams,
-  CarBookingDetails,
   HotelBookingDetails,
 } from "./interfaces"
-import { mockLocations, mockAirports, mockFlights, mockTransferOffers, mockHotels } from "./mock-data"
+import { publicAxiosInstance } from "./axios-instance"
 
-const isApiUnavailable = (error: any) => {
-  return error.code === "ERR_NETWORK" || error.message?.includes("Network Error")
-}
+// const isApiUnavailable = (error: any) => {
+//   return error.code === "ERR_NETWORK" || error.message?.includes("Network Error")
+// }
 
 const login = async (payload: EXISTING_USER_LOGIN) => {
   return await publicAxiosInstance.post(endpoints.auth.EXISTING_USER_LOGIN, payload)
@@ -28,17 +27,7 @@ const searchLocations = async (payload: { keyword: string }) => {
       params: { keyword: payload.keyword },
     })
   } catch (error: any) {
-    if (isApiUnavailable(error)) {
-      // Filter mock locations based on keyword
-      const filtered = mockLocations.filter(
-        (loc) =>
-          loc.name.toLowerCase().includes(payload.keyword.toLowerCase()) ||
-          loc.iataCode.toLowerCase().includes(payload.keyword.toLowerCase()) ||
-          loc.address.cityName.toLowerCase().includes(payload.keyword.toLowerCase()),
-      )
-      return { data: { data: filtered } }
-    }
-    throw error
+    toast.error(error.message || "Something went wrong")
   }
 }
 
@@ -62,11 +51,8 @@ const fetchAvailableFlights = async (searchParams: FlightSearchParams) => {
     const response = await publicAxiosInstance.get("/amadeus/search-flights", { params: searchParams })
     return response.data
   } catch (error: any) {
-    if (isApiUnavailable(error)) {
-      return { data: mockFlights }
-    }
-    console.error("Error fetching available flights:", error)
-    throw error
+    toast.error(error.message || "Something went wrong")
+
   }
 }
 
@@ -107,11 +93,8 @@ const getTransferOffers = async (payload: TransferOfferParams) => {
     const response = await publicAxiosInstance.post("/amadeus/transfer-offers", payload)
     return response.data
   } catch (error: any) {
-    if (isApiUnavailable(error)) {
-      return { data: mockTransferOffers }
-    }
-    console.error("Error fetching transfer offers:", error)
-    throw error
+    toast.error(error.message || "Something went wrong")
+
   }
 }
 
@@ -125,7 +108,7 @@ const createCarBooking = async (bookingDetails: any) => {
   }
 }
 
-const createHotelBooking = async (bookingDetails: HotelBookingDetails) => {
+const createHotelBooking = async (bookingDetails: any) => {
   try {
     const response = await publicAxiosInstance.post("/booking/hotel", bookingDetails)
     return response.data
@@ -142,11 +125,8 @@ const getHotelsByCity = async (cityCode: string) => {
     })
     return response.data
   } catch (error: any) {
-    if (isApiUnavailable(error)) {
-      return { data: mockHotels }
-    }
-    console.error("Error fetching hotels by city:", error)
-    throw error
+    toast.error(error.message || "Something went wrong")
+
   }
 }
 
