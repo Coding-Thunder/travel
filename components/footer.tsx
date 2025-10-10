@@ -100,7 +100,7 @@ export function Footer() {
             </div>
             <div>
               <h4 className="text-white font-semibold mb-3 text-sm">Payment Methods</h4>
-              <Image src={Payment} width={200} height={200} alt="Payment Methods" className="mt-2" />
+          <Image src={Payment} width={200} height={200} alt="Payment Methods" className="mt-2" />
             </div>
           </div>
         </div>

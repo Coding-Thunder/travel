@@ -8,13 +8,23 @@ import Link from "next/link"
 import Image from "next/image"
 import CallNow from "@/components/CallNow"
 
+// Helper function to get date exactly 6 days ahead
+function validIn6Days() {
+  const today = new Date();
+  today.setDate(today.getDate() + 6);
+  return today.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
 const deals = [
   {
     id: 1,
     title: "Summer Sale: Europe Flights",
     description: "Save up to 40% on flights to major European cities. Limited time offer!",
     discount: "40% OFF",
-    validUntil: "Aug 31, 2024",
+    validUntil: validIn6Days(),
     image: "/eiffel-tower.jpg",
     category: "Flights",
   },
@@ -23,7 +33,7 @@ const deals = [
     title: "Weekend Car Rental Special",
     description: "Book any car for the weekend and get the third day free!",
     discount: "1 Day FREE",
-    validUntil: "Jul 15, 2024",
+    validUntil: validIn6Days(),
     image: "/toyota-camry.png",
     category: "Cars",
   },
@@ -32,7 +42,7 @@ const deals = [
     title: "Asia Adventure Package",
     description: "Flight + Hotel combo deals to Tokyo, Bangkok, and Singapore.",
     discount: "35% OFF",
-    validUntil: "Sep 30, 2024",
+    validUntil: validIn6Days(),
     image: "/tokyo-skyline.jpg",
     category: "Packages",
   },
@@ -41,7 +51,7 @@ const deals = [
     title: "Luxury Car Upgrade",
     description: "Book a standard car and get upgraded to luxury class for free!",
     discount: "FREE UPGRADE",
-    validUntil: "Jul 31, 2024",
+    validUntil: validIn6Days(),
     image: "/mercedes.png",
     category: "Cars",
   },
@@ -50,7 +60,7 @@ const deals = [
     title: "Caribbean Getaway",
     description: "Exclusive deals on flights to Caribbean islands. Paradise awaits!",
     discount: "30% OFF",
-    validUntil: "Aug 15, 2024",
+    validUntil: validIn6Days(),
     image: "/tropical-sunset-palms.png",
     category: "Flights",
   },
@@ -59,7 +69,7 @@ const deals = [
     title: "Business Class Flash Sale",
     description: "Upgrade to business class for only $199 extra on select routes.",
     discount: "$199 UPGRADE",
-    validUntil: "Jul 10, 2024",
+    validUntil: validIn6Days(),
     image: "/business-class.jpg",
     category: "Flights",
   },

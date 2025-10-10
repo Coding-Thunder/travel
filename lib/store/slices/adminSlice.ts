@@ -90,16 +90,16 @@ const initialState: AdminState = {
   destinations: [
     {
       id: "1",
-      city: "Paris",
-      country: "France",
-      image: "/paris-eiffel-tower.png",
+      city: "Atlanta",
+      country: "USA",
+      image: "/atlanta.jpg",
       description: "The City of Light awaits with iconic landmarks and world-class cuisine.",
     },
     {
       id: "2",
-      city: "Tokyo",
-      country: "Japan",
-      image: "/tokyo-skyline.png",
+      city: "Los Angeles",
+      country: "USA",
+      image: "/la.jpg",
       description: "Experience the perfect blend of tradition and cutting-edge technology.",
     },
     {
