@@ -356,7 +356,7 @@ export const formatCustomFlightDate = (dateStr: string): string => {
 export const BUSINESS = {
   phone: {
     display: "+1-551-362-8471",
-    call: "++15513628471"
+    call: "+15513628471"
   },
   emails: {
     main: "support@budgettravels4u.com"
