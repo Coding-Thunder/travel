@@ -2,6 +2,8 @@ import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin, Plane, Mail, Phone, MapPin } from "lucide-react"
 import { siteConfig } from "@/lib/config"
 import Image from "next/image"
+import Payment from "@/public/png/payment.png";
+
 
 export function Footer() {
   return (
@@ -98,7 +100,7 @@ export function Footer() {
             </div>
             <div>
               <h4 className="text-white font-semibold mb-3 text-sm">Payment Methods</h4>
-              <p className="text-xs text-slate-400">Visa, Mastercard, Amex, PayPal</p>
+              <Image src={Payment} width={200} height={200} alt="Payment Methods" className="mt-2" />
             </div>
           </div>
         </div>
