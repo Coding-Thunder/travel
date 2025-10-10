@@ -49,12 +49,12 @@ export default function CancellationPolicyPage() {
     "We, as your mediator, secure waivers from providers to process cancellations and refunds.",
   ];
 
-  const term5 = [
-    "Service fees apply to all e-tickets and paper bookings.",
-    "Paper tickets will incur shipping fees ($25 USD domestic, $45+ USD international) via FedEx or similar service.",
-    "PO Boxes cannot be used for paper ticket delivery. A physical address must be provided to process shipping.",
-    `Provide your address via email (${BUSINESS.emails.main}) or call us at ${BUSINESS.phone.display}.`,
-  ];
+  // const term5 = [
+  //   "Service fees apply to all e-tickets and paper bookings.",
+  //   "Paper tickets will incur shipping fees ($25 USD domestic, $45+ USD international) via FedEx or similar service.",
+  //   "PO Boxes cannot be used for paper ticket delivery. A physical address must be provided to process shipping.",
+  //   `Provide your address via email (${BUSINESS.emails.main}) or call us at ${BUSINESS.phone.display}.`,
+  // ];
 
   const term6 = [
     "Customers agree not to dispute fees if rentalconfirmation.com and providers have followed applicable policies.",
@@ -150,7 +150,7 @@ export default function CancellationPolicyPage() {
               <p className="text-xl font-medium mb-6">Cancel and Refund</p>
               <p className="mb-6">
                 Refunds are processed according to provider rules. Fees, penalties, and processing times vary. Our
-                mediation helps secure waivers, but final decisions rest with the provider. Refunds may take 60-90
+                mediation helps secure waivers, but final decisions rest with the provider. Refunds may take 07-30
                 days.
               </p>
               {term4.map((text, idx) => (
@@ -161,7 +161,7 @@ export default function CancellationPolicyPage() {
               ))}
             </section>
 
-            {/** Term5 */}
+            {/* * Term5
             <section>
               <p className="text-xl font-medium mb-6">Paper Tickets and Shipping Fees</p>
               {term5.map((text, idx) => (
@@ -170,7 +170,7 @@ export default function CancellationPolicyPage() {
                   <p>{text}</p>
                 </div>
               ))}
-            </section>
+            </section> */}
 
             {/** Term6 */}
             <section>

@@ -355,17 +355,17 @@ export const formatCustomFlightDate = (dateStr: string): string => {
 
 export const BUSINESS = {
   phone: {
-    display: "+1-855-761-6979",
-    call: "+18557616979"
+    display: "+1-551-362-8471",
+    call: "++15513628471"
   },
   emails: {
-    main: "support@rentalconfirmation.com"
+    main: "support@budgettravels4u.com"
   },
   brand_name: {
-    first: "Rental",
-    second: "Confirmation"
+    first: "Budget",
+    second: "Travels4U"
   },
-  domain: "rentalconfirmation.com"
+  domain: "budgettravels4u.com"
 };
 export const testimonials = [
   { name: "Ethan Parker", testimonial: "Booked my SUV over the phone, the agent guided me perfectly. Pickup was seamless.", date: "Sep 20, 2025", rating: 5, service: "Cars" },
