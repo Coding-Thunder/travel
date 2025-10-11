@@ -44,7 +44,7 @@ export const siteConfig = {
     baseUrl: process.env.NODE_ENV === "production" ? "https://api.budgettravels4u.com" : "https://api.budgettravels4u.com",
   },
   productionServerUrl: "https://api.budgettravels4u.com",
-  localServerUrl: "http://localhost:5000",
+  localServerUrl: "http://localhost:3002",
 }
 
 export const config = siteConfig
