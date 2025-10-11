@@ -45,6 +45,8 @@ export const siteConfig = {
   },
   productionServerUrl: "https://api.budgettravels4u.com",
   localServerUrl: "http://localhost:3002",
+  prodLocalServerUrl: "http://127.0.0.1:3002",
+
 }
 
 export const config = siteConfig
