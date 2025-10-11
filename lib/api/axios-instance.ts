@@ -1,7 +1,7 @@
 import { config } from "@/lib/config"
 import axios, { type AxiosInstance } from "axios"
 
-const baseURL = config.productionServerUrl
+const baseURL = config.localServerUrl
 
 export const publicAxiosInstance: AxiosInstance = axios.create({
   baseURL,
