@@ -1,5 +1,5 @@
 // src/store/searchSlice.ts
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice, PayloadAction, WritableDraft } from "@reduxjs/toolkit";
 
 interface SearchCriteria {
   startLocationCode: string;
@@ -37,11 +37,13 @@ interface SelectedCar {
 interface SearchState {
   criteria: SearchCriteria | null;
   selectedCar: SelectedCar | null;
+  location: WritableDraft<Record<string, any>> | null;
 }
 
 const initialState: SearchState = {
   criteria: null,
   selectedCar: null,
+  location: null,
 };
 
 const searchSlice = createSlice({
@@ -61,6 +63,9 @@ const searchSlice = createSlice({
     clearSelectedCar: (state) => {
       state.selectedCar = null;
     },
+    setLocations: (state, action: PayloadAction<Record<string, any>>) => {
+      state.location = action.payload;
+    },
   },
 });
 
@@ -69,6 +74,7 @@ export const {
   clearSearchCriteria,
   setSelectedCar,
   clearSelectedCar,
+  setLocations,
 } = searchSlice.actions;
 
 export default searchSlice.reducer;

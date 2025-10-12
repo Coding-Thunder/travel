@@ -11,7 +11,7 @@ import { format } from "date-fns"
 import { useDispatch } from "react-redux"
 import { useRouter } from "next/navigation"
 import { useToast } from "@/hooks/use-toast"
-import { setSearchCriteria } from "@/lib/store/slices/carSlice"
+import { setLocations, setSearchCriteria } from "@/lib/store/slices/carSlice"
 
 interface LocationResult {
   iataCode: string
@@ -229,6 +229,10 @@ export default function SearchCar() {
     }
 
     dispatch(setSearchCriteria(payload))
+    dispatch(setLocations({
+      startLocationCode: selectedPickup,
+      dropLocationCode: selectedDrop,
+    }))
     router.push("/cars")
   }
 
@@ -285,7 +289,7 @@ export default function SearchCar() {
                             setPickupQuery("")
                             setPickupOpen(false)
                           }}
-                          className="w-full text-left p-3 hover:bg-gray-50 rounded-lg transition-colors"
+                          className="w-full bg-white text-left p-3 hover:bg-gray-50 rounded-lg transition-colors"
                         >
                           <p className="font-semibold text-sm text-gray-900">{loc.name}</p>
                           <p className="text-xs text-gray-500">
@@ -347,7 +351,7 @@ export default function SearchCar() {
                             setDropQuery("")
                             setDropOpen(false)
                           }}
-                          className="w-full text-left p-3 hover:bg-gray-50 rounded-lg transition-colors"
+                          className="w-full bg-white text-left p-3 hover:bg-gray-50 rounded-lg transition-colors"
                         >
                           <p className="font-semibold text-sm text-gray-900">{loc.name}</p>
                           <p className="text-xs text-gray-500">

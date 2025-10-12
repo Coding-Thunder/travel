@@ -147,6 +147,7 @@ export default function CarsPage() {
   const dispatch = useDispatch();
   const router = useRouter();
   const searchCriteria = useSelector((state: RootState) => state.car.criteria);
+  const location = useSelector((state: RootState) => state.car.location);
 
   const [offers, setOffers] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
@@ -254,7 +255,7 @@ export default function CarsPage() {
               }`,
           },
           { label: "Address", value: searchCriteria.endAddressLine || "-" },
-          { label: "City", value: searchCriteria.endCityName || "-" },
+          { label: "City", value: location?.dropLocationCode.name || "-" },
           { label: "Date & Time", value: formattedDateTime },
         ].map((item) => (
           <div

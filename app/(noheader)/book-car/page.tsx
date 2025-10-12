@@ -52,6 +52,8 @@ const BookCarPage: React.FC = () => {
   });
 
   const countries = useMemo(() => countryList().getData(), []);
+  const location = useSelector((state: RootState) => state.car.location);
+
 
   const handleProceedToPayment = () => {
     if (!contactInfo.phone || !contactInfo.email) {
@@ -104,7 +106,7 @@ const BookCarPage: React.FC = () => {
     const bookingDetails = {
       contactInfo,
       selectedCar,
-      searchCriteria,
+      searchCriteria: { ...searchCriteria, location },
       cardInfo,
       billingInfo,
     };
