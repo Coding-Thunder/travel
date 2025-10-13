@@ -123,9 +123,9 @@ export default function LoginPage() {
                   <input type="checkbox" className="rounded" />
                   <span className="text-gray-600">Remember me</span>
                 </label>
-                <Link href="/forgot-password" className="text-blue-800 hover:underline">
+                {/* <Link href="/forgot-password" className="text-blue-800 hover:underline">
                   Forgot password?
-                </Link>
+                </Link> */}
               </div>
 
               <Button type="submit" className="w-full bg-blue-800 hover:bg-blue-700 text-white h-11" disabled={loading}>
@@ -149,7 +149,7 @@ export default function LoginPage() {
           </CardContent>
         </Card>
       </main>
-      
+
     </div>
   )
 }
