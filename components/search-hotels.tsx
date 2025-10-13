@@ -237,11 +237,11 @@ const SearchHotels: React.FC = () => {
             </div>
 
             {/* Search Button */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center items-center">
                 <Button
                     type="submit"
                     disabled={loading}
-                    className="w-full sm:w-auto lg:min-w-[220px] h-14 text-base font-semibold shadow-md hover:shadow-lg transition-all bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-2"
+                    className="w-full  sm:w-fit  h-14 text-base font-semibold shadow-md hover:shadow-lg transition-all bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-2"
                 >
                     {loading ? <Loader className="animate-spin" /> : <Search size={16} />}
                     {!loading && <span>Search Hotels</span>}

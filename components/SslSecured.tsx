@@ -28,7 +28,8 @@ const SslSecured = () => {
             >
                 Learn more about our privacy policy
             </Button>
-        </div>)
+        </div>
+    )
 }
 
 export default SslSecured
