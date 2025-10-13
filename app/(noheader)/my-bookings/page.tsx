@@ -16,6 +16,7 @@ import Link from "next/link";
 import { routings } from "@/lib/utils";
 import apiService from "@/lib/api/api-service";
 import LoadingAbsolute from "@/components/Common/LoadingAbsolute";
+import CallNow from "@/components/CallNow";
 
 // --- TYPES & HELPERS ---
 
@@ -162,7 +163,8 @@ const CardFooterInfo = ({ booking }: { booking: BookingUI }) => (
         {formatters.currency(booking.currency)}{booking.price}
       </p>
     </div>
-    <Button className="w-full sm:w-auto" onClick={() => window.print()}>Manage Booking</Button>
+    {/* <Button className="w-full sm:w-auto" onClick={() => window.print()}>Manage Booking</Button> */}
+    <CallNow />
   </CardFooter>
 );
 
