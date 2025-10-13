@@ -24,7 +24,7 @@ const SslSecured = () => {
             </p>
             <Button
                 onClick={() => router.push(routings.terms_and_conditions)}
-                className="text-blue-800 hover:underline focus:outline-none transition duration-300 ease-in-out text-sm font-medium"
+                className="text-white hover:underline focus:outline-none transition duration-300 ease-in-out text-sm font-medium"
             >
                 Learn more about our privacy policy
             </Button>

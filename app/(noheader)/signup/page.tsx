@@ -219,7 +219,7 @@ export default function SignupPage() {
           </CardContent>
         </Card>
       </main>
-      
+
     </div>
   )
 }

@@ -17,6 +17,7 @@ import { routings } from "@/lib/utils";
 import apiService from "@/lib/api/api-service";
 import LoadingAbsolute from "@/components/Common/LoadingAbsolute";
 import CallNow from "@/components/CallNow";
+import Image from "next/image";
 
 // --- TYPES & HELPERS ---
 
@@ -104,6 +105,7 @@ const transformFlightData = (b: any): BookingUI => {
 
 const transformCarData = (b: any): BookingUI => {
   const car = b.selectedCar;
+  console.log(car)
   const criteria = b.searchCriteria;
   const pickupName = criteria?.location?.startLocationCode?.name || criteria?.startLocationCode || 'N/A';
   const dropoffName = criteria?.location?.dropLocationCode?.name || criteria?.endName || 'N/A';
@@ -145,7 +147,7 @@ const CardHeaderInfo = ({ booking }: { booking: BookingUI }) => {
         <div>
           <CardTitle className={`flex items-center gap-3 text-lg text-${color}-700`}>
             <Icon className="h-5 w-5" />
-            {title}
+            {booking.carProvider?.logoUrl ? <Image width={100} height={100} alt="car" src={booking.carProvider.logoUrl} /> : title}
           </CardTitle>
           <p className="text-xs text-slate-500 mt-1">Booked on {formatters.date(booking.createdAt)}</p>
         </div>
