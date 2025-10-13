@@ -281,7 +281,7 @@ const BookingCard = ({ price, onBook }: BookingCardProps) => (
         </Button>
         <div className="flex items-center justify-center gap-2 mt-3 text-sm text-gray-500">
             <Lock size={14} />
-            <span>SSL Secured Payment</span>
+            <span className="text-green-600">SSL Secured</span>
         </div>
     </div>
 );
