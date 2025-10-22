@@ -133,7 +133,7 @@ const TermsAndConditionsPage: React.FC = () => {
               For any questions regarding these Terms and Conditions, contact us at{" "}
               <strong>{BUSINESS.emails.main}</strong> or call {BUSINESS.phone.display}.
             </p>
-            <p className="text-gray-700">Address: 1039 Coffen Avenue, STE 1200, Sheridan, Wyoming, 82801</p>
+            {/* <p className="text-gray-700">Address: 1039 Coffen Avenue, STE 1200, Sheridan, Wyoming, 82801</p> */}
           </section>
         </div>
 
