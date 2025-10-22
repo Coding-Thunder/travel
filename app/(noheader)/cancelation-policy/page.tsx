@@ -91,20 +91,21 @@ export default function CancellationPolicyPage() {
       <section className="py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           {/* Important Notice */}
-          {/* <Card className="mb-8">
+          <Card className="mb-8">
             <CardContent className="p-6">
               <div className="flex items-start gap-4">
                 <AlertCircle className="h-6 w-6 text-blue-800 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Important Notice</h3>
+                  {/* <h3 className="font-semibold text-gray-900 mb-2">Important Notice</h3> */}
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    This policy applies to bookings made through {siteConfig.brand.name}. Please note that airline
-                    and car rental companies may have their own cancellation policies that supersede ours.
+                    {siteConfig.brand.name} acts as an Online Travel Agency (OTA) facilitating bookings for flights, hotels, and car rentals through trusted third-party service providers, including airlines, hotels, car rental agencies, and global distribution systems such as Amadeus.
+
+                    All reservations made through our platform are subject to the individual provider’s terms, refund rules, and cancellation policies. By booking through Budget Travels4U, you acknowledge and accept these terms
                   </p>
                 </div>
               </div>
             </CardContent>
-          </Card> */}
+          </Card>
 
           {/* Sections */}
           <div className="prose prose-blue max-w-none space-y-8">
