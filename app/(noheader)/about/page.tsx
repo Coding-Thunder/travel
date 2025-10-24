@@ -10,15 +10,17 @@ export default function AboutPage() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16 md:py-20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-            <h1 className="text-4xl md:text-5xl font-bold mb-3">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
               About {siteConfig.brand.name}
             </h1>
-            <p className="text-lg md:text-xl text-blue-100 max-w-2xl">
+            <p className="text-xl text-blue-100 max-w-2xl mx-auto text-pretty">
               Your trusted partner for seamless travel experiences worldwide.
             </p>
           </div>
         </section>
+
+
 
         {/* Section Template */}
         {[
