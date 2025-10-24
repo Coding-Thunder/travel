@@ -3,33 +3,33 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Quote } from "lucide-react"
 import { useState, useEffect } from "react"
-
 const reviews = [
   {
     id: 1,
     name: "Sarah Johnson",
     rating: 5,
-    text: "Booked a hotel and flight for my business trip through BudgetTravels4U. Everything was smooth and prices were competitive. The OTA platform made it super easy!",
+    text: "Booked my flight through BudgetTravels4U and everything went perfectly. The OTA platform was fast, secure, and offered great fare options!",
   },
   {
     id: 2,
     name: "Michael Chen",
     rating: 5,
-    text: "Used BudgetTravels4U to book multiple flights and hotels. The booking process was seamless, and I received instant confirmations for all my reservations. Highly recommend this OTA!",
+    text: "Used BudgetTravels4U to book multiple domestic flights. Got instant confirmations and smooth coordination with the airlines. Highly recommend this OTA for flights!",
   },
   {
     id: 3,
     name: "Emily Rodriguez",
     rating: 4,
-    text: "Found amazing hotel deals and flights for my family vacation on BudgetTravels4U. The OTA interface is intuitive, and the support team helped me with cancellations and modifications.",
+    text: "Found great flight deals for my vacation via BudgetTravels4U. The booking process was straightforward, and their support team helped with a schedule change quickly.",
   },
   {
     id: 4,
     name: "David Thompson",
     rating: 5,
-    text: "Booked flights and multiple hotel rooms for our corporate team via BudgetTravels4U. As an OTA, they made managing group bookings and payment hassle-free.",
+    text: "Booked several flights for our corporate team through BudgetTravels4U. As an OTA, they handled group booking and payments efficiently. Excellent experience overall!",
   },
 ];
+
 
 
 export function ReviewsSection() {

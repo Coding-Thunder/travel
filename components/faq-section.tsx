@@ -1,55 +1,44 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-
 const faqs = [
   {
-    question: "How do I book a flight or rental car?",
+    question: "How do I book a flight through your platform?",
     answer:
-      "Use our search form to enter your travel details. Browse available options, select your preferred choice, and complete the booking process securely. We act as a booking facilitator, connecting you with the airline or rental provider.",
+      "Simply enter your trip details in our search form — departure, destination, and travel dates. We’ll show available options from multiple airlines. Choose your preferred flight and complete the booking securely on our platform. We act as an OTA, facilitating your booking directly with the airline.",
   },
   {
-    question: "How do I book a hotel?",
+    question: "Can I cancel or modify my flight booking?",
     answer:
-      "Search for your destination, dates, and number of guests. Choose a hotel from the options displayed and complete your booking securely. We facilitate the booking with the hotel, but hotel policies apply directly.",
+      "Yes, cancellations and modifications depend on the airline’s rules and fare conditions. You can request changes through our platform, and we’ll coordinate with the airline to process your request or secure applicable waivers when possible.",
   },
   {
-    question: "Can I cancel or modify my flight or car booking?",
+    question: "What happens if my flight is cancelled by the airline?",
     answer:
-      "Cancellation or modification is subject to the airline or provider's policy. Most providers allow changes or cancellations through our platform, but refunds are processed according to their rules. We can assist you in securing waivers when applicable.",
+      "If the airline cancels your flight, their policy determines your eligibility for a refund or rebooking. As your OTA, we assist in processing refunds or arranging alternate options as per the airline’s guidelines.",
   },
   {
-    question: "Can I cancel or modify my hotel booking?",
+    question: "How do I receive my flight booking confirmation?",
     answer:
-      "Hotel cancellations and modifications are subject to the hotel's own policy. Some bookings may be non-refundable or time-sensitive. Our platform helps you communicate with the hotel to request changes or refunds.",
+      "Once your booking is complete, we’ll send a confirmation email containing your airline PNR, e-ticket, and travel details. The airline may also send you a direct confirmation.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "What payment methods are available for flight bookings?",
     answer:
-      "We accept all major credit cards (Visa, Mastercard, American Express), debit cards, and PayPal. All transactions are encrypted and secure. Your payment is transferred to the respective airline, hotel, or car provider.",
+      "We accept all major credit cards, debit cards, and PayPal. Payments are processed securely through encrypted gateways, and funds are settled with the airline via our system.",
   },
   {
-    question: "How do I receive my booking confirmation?",
+    question: "How do flight refunds work?",
     answer:
-      "After booking, you'll receive a confirmation email from our platform containing your booking details, reference number, and any vouchers. The airline, hotel, or provider may also send direct confirmations.",
+      "Refunds are processed as per the airline’s policy once approved. We coordinate with the airline and initiate the refund to your original payment method. Processing times may vary by airline and payment provider.",
   },
   {
-    question: "What happens if my flight or hotel is cancelled by the provider?",
+    question: "Is my personal and payment information secure?",
     answer:
-      "If a provider cancels, their own policies determine your eligibility for refunds or rebooking. We assist you in processing refunds or arranging alternatives whenever possible.",
+      "Yes. As an OTA, we use advanced encryption and follow industry-standard data protection practices. Your information is shared only with the airline and payment providers as needed to complete your booking.",
   },
   {
-    question: "Is my personal information secure?",
+    question: "Do you provide customer support for flight bookings?",
     answer:
-      "Yes. We use advanced encryption and security measures to protect your personal and payment information. Your data is never shared with third parties except to facilitate bookings.",
-  },
-  {
-    question: "Do you offer customer support?",
-    answer:
-      "Yes, our support team is available 24/7 to help with any booking issues, clarifications on cancellations, or refund requests. You can reach us via phone, email, or live chat.",
-  },
-  {
-    question: "How do refunds work?",
-    answer:
-      "Refunds are handled according to the provider's rules. Once approved, they are processed via your original payment method. We facilitate communication and waivers where possible to help expedite the process.",
+      "Absolutely. Our customer support team is available 24/7 to help with booking issues, cancellations, schedule changes, or refund queries. You can reach us via phone, email, or live chat.",
   },
 ];
 
