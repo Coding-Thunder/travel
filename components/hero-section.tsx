@@ -171,9 +171,9 @@ export function HeroSection() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 drop-shadow-2xl">
             Find Your Next Adventure
           </h1>
-          {/* <p className="text-xl md:text-2xl text-white/95 drop-shadow-lg font-medium">
-            Compare and book flights, hotels, and car rentals
-          </p> */}
+          <p className="text-xl md:text-2xl text-white/95 drop-shadow-lg font-medium">
+            Call your agent now
+          </p>
         </div>
 
         {/* Dropdown Selector */}
