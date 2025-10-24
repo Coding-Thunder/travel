@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: `${siteConfig.brand.name} - Travel Booking Made Easy`,
   description: `Book flights and rental cars with ${siteConfig.brand.name}. Powered by ${siteConfig.brand.poweredBy}.`,
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.svg", // <-- Add your SVG favicon here
+  },
 }
 
 export default function RootLayout({
@@ -30,7 +33,6 @@ export default function RootLayout({
           <Footer />
         </ReduxProvider>
         <CallPopUp />
-
       </body>
     </html>
   )
