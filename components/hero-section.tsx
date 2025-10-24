@@ -53,8 +53,7 @@ export function HeroSection() {
             Find Your Next Adventure
           </h1>
           <p className="text-xl md:text-2xl text-white/95 drop-shadow-lg font-medium">
-            Call your agent now 
-          </p>
+            Personalized Travel Planning Made Simple          </p>
         </div>
 
         {/* Dropdown Selector */}
