@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { BUSINESS } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/config";
 
 const PrivacyPolicyPage: React.FC = () => {
   const printRef = useRef<HTMLDivElement>(null);
@@ -12,88 +13,6 @@ const PrivacyPolicyPage: React.FC = () => {
     month: "long",
     day: "numeric",
   });
-
-  const privacyTerms1 = [
-    "As a travel aggregator/mediator, we collect information to help you compare and book flights and car rentals:",
-    "a) Information you provide directly when creating accounts, making bookings through our platform, or contacting customer support. This may include name, email, phone number, billing info, and travel preferences.",
-    "b) Automatically collected information such as IP address, browser type, device information, and referring website.",
-    "c) Information from third-party partners when you link your account or interact with partner services.",
-  ];
-
-  const privacyTerms2 = [
-    {
-      heading: "a) Facilitating bookings",
-      subitems: [
-        "We use your data to transmit booking requests to travel service providers and send confirmations and updates on your behalf.",
-      ],
-    },
-    {
-      heading: "b) Account management",
-      subitems: [
-        "Your information helps us manage your account and respond to inquiries efficiently.",
-      ],
-    },
-    {
-      heading: "c) Improving our platform",
-      subitems: [
-        "We analyze usage data to enhance our website, user experience, and service offerings.",
-      ],
-    },
-    {
-      heading: "d) Marketing and promotions",
-      subitems: [
-        "With your consent, we may send promotional emails about travel services that match your interests.",
-      ],
-    },
-    {
-      heading: "e) Sharing with trusted partners",
-      subitems: [
-        "We may share data with service providers and partners who facilitate bookings, payment processing, and analytics. We never sell your personal data.",
-      ],
-    },
-    {
-      heading: "f) Legal compliance",
-      subitems: [
-        "We may disclose information to comply with legal obligations or lawful requests.",
-      ],
-    },
-    {
-      heading: "g) Data retention",
-      subitems: [
-        "We retain personal information only as long as necessary to provide our platform services, comply with legal requirements, or resolve disputes.",
-      ],
-    },
-    {
-      heading: "h) Cookies and tracking",
-      subitems: [
-        "We use cookies and similar technologies to improve your experience, analyze usage, and display relevant content. You can manage cookies through your browser settings.",
-      ],
-    },
-    {
-      heading: "i) Children’s privacy",
-      subitems: [
-        "Our platform is not intended for individuals under 13. We do not knowingly collect information from children.",
-      ],
-    },
-    {
-      heading: "j) International data transfers",
-      subitems: [
-        "Your information may be transferred and stored outside your country. We ensure appropriate safeguards are in place.",
-      ],
-    },
-    {
-      heading: "k) Security measures",
-      subitems: [
-        "We implement technical, administrative, and physical measures to protect your data against unauthorized access and misuse.",
-      ],
-    },
-    {
-      heading: "l) Contact and complaints",
-      subitems: [
-        `For questions, requests, or complaints regarding your personal data, contact us at ${BUSINESS.emails.main}.`,
-      ],
-    },
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -114,76 +33,157 @@ const PrivacyPolicyPage: React.FC = () => {
           {/* Introduction */}
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Introduction</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              {siteConfig.brand.name} is an online travel platform that helps customers to book flights, hotels, car rentals,
+              and holiday packages. Your privacy is extremely important to us. We treat the personal information you share
+              with us with the highest level of care, ensuring safety, confidentiality, and compliance with applicable data
+              protection laws.
+            </p>
             <p className="text-gray-700 leading-relaxed">
-              rentalconfirmation.com respects your privacy and is committed to protecting your personal information. This
-              policy explains what data we collect, how we use it, and your rights as a user.
+              Our website is operated by <strong>{siteConfig.brand.name}</strong>, with its registered office at{" "}
+              <strong>1309 Coffeen Avenue, Sheridan,  Wyoming,  82801, USA</strong>. For assistance or queries, contact our
+              support team at <strong>{siteConfig.brand.email}</strong> or call{" "}
+              <strong>{siteConfig.brand.phone}</strong>.
             </p>
           </section>
 
           {/* Information We Collect */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Information We Collect</h2>
-            <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              {privacyTerms1.map((text, idx) => (
-                <li key={idx}>{text}</li>
-              ))}
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">1. Information We Collect</h2>
+            <ul className="list-disc pl-6 text-gray-700 space-y-3">
+              <li>
+                <strong>Information you provide directly</strong> — when creating an account, making a booking, or
+                contacting support. This includes:
+                <ul className="list-disc pl-6 mt-2">
+                  <li>Full name, email address, and phone number</li>
+                  <li>Billing and payment details</li>
+                  <li>Passport number and travel itinerary</li>
+                  <li>Travel preferences or special requests</li>
+                </ul>
+              </li>
+              <li>
+                <strong>b) Information collected automatically</strong> — such as IP address, browser type, device info,
+                referring website, and browsing activity.
+              </li>
+              <li>
+                <strong>c) Information from third parties</strong> — from social media, public databases, or partner
+                websites when you connect or interact with our services.
+              </li>
             </ul>
           </section>
 
-          {/* How We Use Your Information */}
+          {/* Use of Information */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">How We Use Your Information</h2>
-            {privacyTerms2.map((item, idx) => (
-              <div key={idx} className="mb-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.heading}</h3>
-                <ul className="list-disc pl-6 text-gray-700 space-y-2">
-                  {item.subitems.map((text, subIdx) => (
-                    <li key={subIdx}>{text}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">2. How We Use Your Information</h2>
+
+            <div className="space-y-4 text-gray-700">
+              <p>
+                <strong>a) Facilitating bookings:</strong> We process your reservations, send confirmations, and
+                communicate with travel service providers.
+              </p>
+              <p>
+                <strong>b) Account management:</strong> Your data helps manage your {siteConfig.brand.name} account and respond to
+                inquiries effectively.
+              </p>
+              <p>
+                <strong>c) Improving our platform:</strong> Usage data helps us improve features, UX, and service quality.
+              </p>
+              <p>
+                <strong>d) Marketing and promotions:</strong> With consent, we send offers or newsletters about travel
+                services.
+              </p>
+              <p>
+                <strong>e) Sharing with trusted partners:</strong> We share information only with airlines, hotels, payment
+                processors, or analytics partners who help fulfill your bookings. We never sell personal data.
+              </p>
+              <p>
+                <strong>f) Legal compliance:</strong> Data may be disclosed when required by law or governmental request.
+              </p>
+              <p>
+                <strong>g) Data retention:</strong> Personal information is kept only as long as necessary for bookings,
+                legal obligations, or dispute resolution.
+              </p>
+              <p>
+                <strong>h) Cookies and tracking:</strong> Cookies improve user experience and show relevant offers. Manage
+                cookies via browser settings.
+              </p>
+              <p>
+                <strong>i) Children’s privacy:</strong> Our services are not for users under 13. We do not knowingly collect
+                children’s data.
+              </p>
+              <p>
+                <strong>j) International data transfers:</strong> Data may be processed abroad with proper safeguards.
+              </p>
+              <p>
+                <strong>k) Security measures:</strong> Technical, administrative, and physical safeguards (including SSL
+                encryption and firewalls) are applied.
+              </p>
+              <p>
+                <strong>l) Calls and recordings:</strong> Calls may be monitored for training and deleted after use.
+              </p>
+              <p>
+                <strong>m) Fraud prevention:</strong> Identity and billing checks help prevent unauthorized use without
+                affecting credit scores.
+              </p>
+              <p>
+                <strong>n) Third-party data collection:</strong> Third parties like Google or Facebook may collect data per
+                their privacy practices.
+              </p>
+            </div>
           </section>
 
           {/* Data Security */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Data Security</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">3. How We Protect Your Information</h2>
             <p className="text-gray-700 leading-relaxed">
-              We implement strict technical and organizational measures to protect your data from unauthorized access,
-              loss, or misuse. While we strive to protect your personal information, no method of transmission over the
-              Internet is 100% secure.
+              {siteConfig.brand.name} employs advanced encryption, secure servers, and restricted access protocols to protect your
+              personal information. Sensitive data (like card details) is encrypted during transmission and protected by
+              firewalls and intrusion detection systems.
             </p>
           </section>
 
           {/* Your Rights */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Your Rights and Controls</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              You have the right to access, update, or delete your personal information. You can also manage your
-              communication preferences at any time.
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">4. Your Rights & Choices</h2>
+            <ul className="list-disc pl-6 text-gray-700 space-y-2">
+              <li>Access and obtain a copy of your personal data.</li>
+              <li>Request correction of inaccurate or incomplete data.</li>
+              <li>Request deletion of your data, subject to legal or contractual retention.</li>
+              <li>Opt out of marketing communications anytime.</li>
+              <li>Request data portability, where applicable.</li>
+            </ul>
+            <p className="mt-4 text-gray-700">
+              To exercise your rights, contact us at <strong>{BUSINESS.emails.main}</strong>.
             </p>
+          </section>
+
+          {/* Policy Updates */}
+          <section>
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">5. Updates to This Privacy Policy</h2>
             <p className="text-gray-700 leading-relaxed">
-              For any privacy-related requests, contact our support team at <strong>{BUSINESS.emails.main}</strong>.
+              We may revise this Privacy Policy periodically. Material updates will be communicated via email or posted on
+              our website with the updated effective date.
             </p>
+            <p className="text-gray-700 leading-relaxed mt-2">Last updated: {todayDate}</p>
           </section>
 
           {/* Contact Section */}
           <section className="bg-gray-50 p-6 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4 text-gray-900">Contact Us</h2>
-            <p className="text-gray-700 leading-relaxed mb-2">
-              If you have questions or concerns about this Privacy Policy or our data practices, please contact us:
+            <h2 className="text-2xl font-bold mb-4 text-gray-900">6. Contact Information</h2>
+            <p className="text-gray-700 mb-2">
+              For questions or concerns about this Privacy Policy or data handling, please contact:
             </p>
-            <div className="space-y-2 text-gray-700">
-              <p>
-                <strong>Email:</strong> {BUSINESS.emails.main}
-              </p>
-              <p>
-                <strong>Phone:</strong> {BUSINESS.phone.display}
-              </p>
-            </div>
+            <p className="text-gray-700">
+              <strong>Email:</strong> {BUSINESS.emails.main}
+              <br />
+              <strong>Phone:</strong> {BUSINESS.phone.display}
+              <br />
+              <strong>Address:</strong> 850 Northvine Street, Fostoria OH 44830, USA
+            </p>
           </section>
         </div>
 
+        {/* Print Button */}
         <div className="text-center mt-8">
           <Button
             onClick={() => {
@@ -191,18 +191,18 @@ const PrivacyPolicyPage: React.FC = () => {
                 const printContent = printRef.current.innerHTML;
                 const printWindow = window.open("", "_blank", "width=800,height=600");
                 printWindow?.document.write(`
-                  <html>
-                    <head>
-                      <title>Privacy Policy</title>
-                      <style>
-                        body { font-family: Arial, sans-serif; padding: 20px; color: #333; }
-                        h2, h3 { color: #1e3a8a; }
-                        ul { margin-left: 20px; }
-                      </style>
-                    </head>
-                    <body>${printContent}</body>
-                  </html>
-                `);
+                <html>
+                  <head>
+                    <title>Privacy Policy - ${siteConfig.brand.name}</title>
+                    <style>
+                      body { font-family: Arial, sans-serif; padding: 20px; color: #333; }
+                      h2, h3 { color: #1e3a8a; }
+                      ul { margin-left: 20px; }
+                    </style>
+                  </head>
+                  <body>${printContent}</body>
+                </html>
+              `);
                 printWindow?.document.close();
                 printWindow?.focus();
                 printWindow?.print();

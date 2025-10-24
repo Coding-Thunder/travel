@@ -143,11 +143,11 @@ export function HeroSection() {
     return () => clearInterval(interval)
   }, [])
 
-  const dropdownOptions = [
-    { value: "flights", label: "Flights", icon: Plane },
-    { value: "hotels", label: "Hotels", icon: Building2 },
-    { value: "cars", label: "Cars", icon: Car },
-  ]
+  // const dropdownOptions = [
+  //   { value: "flights", label: "Flights", icon: Plane },
+  //   { value: "hotels", label: "Hotels", icon: Building2 },
+  //   { value: "cars", label: "Cars", icon: Car },
+  // ]
 
   return (
     <div className="relative min-h-[680px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
@@ -171,9 +171,9 @@ export function HeroSection() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-5 drop-shadow-2xl">
             Find Your Next Adventure
           </h1>
-          <p className="text-xl md:text-2xl text-white/95 drop-shadow-lg font-medium">
+          {/* <p className="text-xl md:text-2xl text-white/95 drop-shadow-lg font-medium">
             Compare and book flights, hotels, and car rentals
-          </p>
+          </p> */}
         </div>
 
         {/* Dropdown Selector */}

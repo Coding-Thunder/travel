@@ -95,7 +95,7 @@ export default function SupportPage() {
                   </CardContent>
                 </Card>
 
-                <Card>
+                {/* <Card>
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="bg-orange-100 p-3 rounded-lg">
@@ -108,7 +108,7 @@ export default function SupportPage() {
                       </div>
                     </div>
                   </CardContent>
-                </Card>
+                </Card> */}
               </div>
 
               {/* Contact Form */}
