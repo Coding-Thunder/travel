@@ -177,7 +177,7 @@ export function HeroSection() {
         </div>
 
         {/* Dropdown Selector */}
-        <div className="flex w-fit mb-6">
+        {/* <div className="flex w-fit mb-6">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
@@ -222,7 +222,7 @@ export function HeroSection() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-        </div>
+        </div> */}
 
         {/* Search Boxes */}
         <Card className="p-8 shadow-2xl bg-white rounded-xl border-0">
