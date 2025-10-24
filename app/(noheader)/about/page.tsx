@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Users, Globe, Award } from "lucide-react";
 import { siteConfig } from "@/lib/config";
 
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
@@ -15,14 +16,11 @@ export default function AboutPage() {
               About {siteConfig.brand.name}
             </h1>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto text-pretty">
-              Your trusted partner for seamless travel experiences worldwide.
+              Your trusted travel consultant partner for seamless travel experiences worldwide.
             </p>
           </div>
         </section>
 
-
-
-        {/* Section Template */}
         {[
           {
             title: "About Us",
