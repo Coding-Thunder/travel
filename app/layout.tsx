@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: `Book flights and rental cars with ${siteConfig.brand.name}. Powered by ${siteConfig.brand.poweredBy}.`,
   generator: "v0.app",
   icons: {
-    icon: "/favicon.svg", // <-- Add your SVG favicon here
+    icon: "/favicon2.png", // <-- Add your SVG favicon here
   },
 }
 
