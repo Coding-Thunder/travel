@@ -19,7 +19,7 @@ const NoResults: React.FC<NoResultsProps> = ({ type = "car" }) => {
     ? "We couldn’t find any flights matching your search. Try changing your filters or contact us for quick help."
     : "We couldn’t find any cars matching your search. Try changing your filters or contact us for quick help.";
 
-  const iconColor = isFlight ? "text-sky-700" : "text-blue-700";
+  const iconColor = isFlight ? "text-sky-700" : "text-orange-700";
 
   return (
     <div className="flex flex-col items-center justify-center py-12 px-6 text-center">

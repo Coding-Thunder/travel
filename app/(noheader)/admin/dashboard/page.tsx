@@ -211,7 +211,7 @@ export default function AdminDashboardPage() {
   if (loading && bookings.length === 0) {
     return (
       <div className="flex items-center justify-center h-[60vh]">
-        <Loader2 className="animate-spin h-8 w-8 text-blue-600" />
+        <Loader2 className="animate-spin h-8 w-8 text-orange-500" />
       </div>
     )
   }
@@ -228,7 +228,7 @@ export default function AdminDashboardPage() {
             <StatCard title="Completed" value={dashboardData.completedBookings} icon={<CheckCircle2 className="h-4 w-4 text-green-500" />} />
             <StatCard title="Pending" value={dashboardData.pendingBookings} icon={<Clock className="h-4 w-4 text-yellow-500" />} />
             <StatCard title="Total Employees" value={dashboardData.totalEmployees} icon={<Users className="h-4 w-4 text-gray-500" />} />
-            <StatCard title="Admins" value={dashboardData.adminsCount} icon={<UserCheck className="h-4 w-4 text-blue-500" />} />
+            <StatCard title="Admins" value={dashboardData.adminsCount} icon={<UserCheck className="h-4 w-4 text-orange-500" />} />
             <StatCard title="Viewers" value={dashboardData.viewerCount} icon={<Eye className="h-4 w-4 text-purple-500" />} />
           </div>
         )}
@@ -252,7 +252,7 @@ export default function AdminDashboardPage() {
                           <div className="w-1/4 text-left font-semibold text-gray-700">{b._id}</div>
                           <div className="w-1/4 text-left text-gray-600">{b.user}</div>
                           <div className="w-1/6 text-left">
-                            <span className={`px-2.5 py-1 text-xs font-semibold rounded-full ${b.type === "Flight" ? "bg-blue-100 text-blue-800" : "bg-green-100 text-green-800"}`}>
+                            <span className={`px-2.5 py-1 text-xs font-semibold rounded-full ${b.type === "Flight" ? "bg-orange-100 text-orange-800" : "bg-green-100 text-green-800"}`}>
                               {b.type}
                             </span>
                           </div>
@@ -266,7 +266,7 @@ export default function AdminDashboardPage() {
                         <div className="md:hidden flex flex-col items-start w-full text-left p-2">
                           <div className="flex justify-between w-full mb-2">
                             <span className="font-semibold text-gray-700">{b._id}</span>
-                            <span className={`px-2.5 py-1 text-xs font-semibold rounded-full ${b.type === "Flight" ? "bg-blue-100 text-blue-800" : "bg-green-100 text-green-800"}`}>
+                            <span className={`px-2.5 py-1 text-xs font-semibold rounded-full ${b.type === "Flight" ? "bg-orange-100 text-orange-800" : "bg-green-100 text-green-800"}`}>
                               {b.type}
                             </span>
                           </div>

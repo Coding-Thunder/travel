@@ -19,11 +19,11 @@ const CallPopUp: React.FC = () => {
         >
             <div
                 onClick={() => setOpen(!opened)}
-                className="bg-blue-800 text-white w-fit h-full items-center justify-center flex cursor-pointer px-2"
+                className="bg-orange-500 text-white w-fit h-full items-center justify-center flex cursor-pointer px-2"
             >
                 {opened ? <ChevronRight /> : <ChevronLeft />}
             </div>
-            <div className="flex justify-start items-center gap-2 text-blue-800">
+            <div className="flex justify-start items-center gap-2 text-orange-800">
                 <Image
                     src={callsPerson.src}
                     alt="Calls Person"
@@ -35,9 +35,9 @@ const CallPopUp: React.FC = () => {
                     <p className="font-bold">Phone-Only Deal!</p>
                     <p className="text-sm font-semibold">
                         Use promo code{" "}
-                        <span className="bg-app-blue-4 p-1 rounded-lg">{promoCode}</span> and
+                        <span className="bg-orange-500 text-white px-2 p-1 rounded-lg">{promoCode}</span> and
                         save. Call us 24/7
-                        <span className="text-app-blue-3 cursor-pointer">
+                        <span className="text-orange-500 cursor-pointer">
                             <a href={`tel:${siteConfig.brand.phone}`} className="w-fit h-fit">
                                 {" "}
                                 {siteConfig.brand.phoneLink}

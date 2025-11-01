@@ -107,10 +107,10 @@ export default function CancellationPolicyPage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-800 to-blue-800 text-white py-16">
+      <section className="bg-gradient-to-br from-orange-800 to-orange-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Cancellation & Refund Policy</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto text-pretty">
+          <p className="text-xl text-orange-100 max-w-2xl mx-auto text-pretty">
             Understanding your rights and our policies
           </p>
         </div>
@@ -123,7 +123,7 @@ export default function CancellationPolicyPage() {
           {/* <Card className="mb-8">
             <CardContent className="p-6">
               <div className="flex items-start gap-4">
-                <AlertCircle className="h-6 w-6 text-blue-800 flex-shrink-0 mt-1" />
+                <AlertCircle className="h-6 w-6 text-orange-800 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {siteConfig.brand.name} acts as an Online Travel Agency (OTA) facilitating bookings for flights, hotels, and car rentals through trusted third-party providers. All reservations are subject to individual provider’s terms, refund rules, and cancellation policies.
@@ -140,7 +140,7 @@ export default function CancellationPolicyPage() {
                 <h2 className="text-xl font-semibold mb-4">{section.title}</h2>
                 {section.content.map((text, tIdx) => (
                   <div key={tIdx} className="w-fit flex items-start gap-4 mb-3">
-                    <div className="p-1 rounded-full bg-app-blue-1" />
+                    <div className="p-1 rounded-full bg-orange-500" />
                     <p>{text}</p>
                   </div>
                 ))}

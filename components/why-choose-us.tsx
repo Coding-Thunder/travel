@@ -7,8 +7,8 @@ const features = [
     icon: Zap,
     title: "Fast Booking",
     description: "Book your flights and cars in minutes with our streamlined process",
-    color: "text-blue-800",
-    bgColor: "bg-blue-50",
+    color: "text-orange-800",
+    bgColor: "bg-orange-50",
   },
   {
     icon: Shield,

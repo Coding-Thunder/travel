@@ -30,8 +30,8 @@ export default function ForgotPasswordPage() {
           {!submitted ? (
             <>
               <CardHeader className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4">
-                  <Mail className="h-8 w-8 text-blue-800" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4">
+                  <Mail className="h-8 w-8 text-orange-800" />
                 </div>
                 <CardTitle className="text-2xl font-bold">Forgot Password?</CardTitle>
                 <p className="text-gray-600 mt-2">No worries, we'll send you reset instructions</p>
@@ -54,7 +54,7 @@ export default function ForgotPasswordPage() {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full bg-blue-800 hover:bg-blue-700 text-white h-11">
+                  <Button type="submit" className="w-full bg-orange-800 hover:bg-orange-700 text-white h-11">
                     Send Reset Link
                   </Button>
 

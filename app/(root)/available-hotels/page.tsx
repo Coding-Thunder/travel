@@ -340,7 +340,7 @@ const AvailableHotelsPage = () => {
 
         {loading ? (
           <div className="flex justify-center items-center h-40">
-            <Loader className="animate-spin w-8 h-8 text-blue-600" />
+            <Loader className="animate-spin w-8 h-8 text-orange-500" />
           </div>
         ) : paginatedHotels.length === 0 ? (
           <p className="text-gray-500 text-center">No hotels match filters.</p>
@@ -457,7 +457,7 @@ const AvailableHotelsPage = () => {
             {totalPages > 1 && (
               <div className="flex justify-center items-center gap-3 my-4 py-4">
                 <Button
-                  className="bg-blue-600 text-white"
+                  className="bg-orange-500 text-white"
                   onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
                   disabled={currentPage === 1}
                 >
@@ -467,7 +467,7 @@ const AvailableHotelsPage = () => {
                   Page {currentPage} of {totalPages}
                 </span>
                 <Button
-                  className="bg-blue-600 text-white"
+                  className="bg-orange-500 text-white"
                   onClick={() =>
                     setCurrentPage((p) => Math.min(p + 1, totalPages))
                   }
@@ -575,7 +575,7 @@ const AvailableHotelsPage = () => {
               </div>
 
               <div className="mt-6 flex justify-between items-center pt-4 border-t border-gray-200">
-                <div className="text-2xl font-bold text-blue-800">
+                <div className="text-2xl font-bold text-orange-800">
                   ${selectedOffer?.price.total}
                 </div>
                 <div className="flex gap-4">
@@ -586,7 +586,7 @@ const AvailableHotelsPage = () => {
                     Cancel
                   </Button>
                   <Button
-                    className="bg-blue-600 text-white"
+                    className="bg-orange-500 text-white"
                     onClick={handleConfirmBooking}
                   >
                     Confirm Booking

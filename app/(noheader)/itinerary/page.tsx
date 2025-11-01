@@ -143,22 +143,22 @@ const LayoverInfo = ({
     location,
     repeatCheckIn,
 }: LayoverInfoProps) => (
-    <div className="my-4 p-4 rounded-lg bg-gray-100 border border-gray-200">
-        <div className="flex items-center gap-3">
-            <div className="text-gray-500">
+    <div className="my-4 p-4 rounded-lg bg-orange-500 text-white">
+        <div className="flex items-center gap-3 ">
+            <div>
                 <User size={20} />
             </div>
             <div className="flex-grow">
-                <p className="font-semibold text-gray-800">
+                <p className="font-semibold">
                     {repeatCheckIn
                         ? `Repeat check-in in ${location}`
                         : `Layover in ${location}`}
                 </p>
                 {repeatCheckIn && (
-                    <p className="text-xs text-blue-800">You are switching airlines.</p>
+                    <p className="text-xs">You are switching airlines.</p>
                 )}
             </div>
-            <div className="flex items-center gap-1 text-sm text-gray-600">
+            <div className="flex items-center gap-1 text-sm">
                 <Clock size={14} />
                 <span>{duration}</span>
             </div>
@@ -166,9 +166,6 @@ const LayoverInfo = ({
     </div>
 );
 
-// =================================================================
-// Main Itinerary Component
-// =================================================================
 
 const Itinerary = () => {
     const selectedFlight = useSelector(
@@ -275,7 +272,7 @@ const BookingCard = ({ price, onBook }: BookingCardProps) => (
         </div>
         <Button
             onClick={onBook}
-            className="w-full bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-800 transition duration-300 h-12 text-lg"
+            className="w-full bg-orange-500 text-white font-semibold rounded-lg shadow-md hover:bg-orange-800 transition duration-300 h-12 text-lg"
         >
             Continue
         </Button>

@@ -61,10 +61,10 @@ export default function AdminLoginPage() {
     return (
         <div className="min-h-screen flex flex-col">
             <main className="flex-1 bg-gray-50 flex items-center justify-center px-4 py-12">
-                <Card className="w-full max-w-md border-blue-200 shadow-md">
+                <Card className="w-full max-w-md border-orange-200 shadow-md">
                     <CardHeader className="text-center">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4">
-                            <Shield className="h-8 w-8 text-blue-800" />
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4">
+                            <Shield className="h-8 w-8 text-orange-800" />
                         </div>
                         <CardTitle className="text-2xl font-bold">Admin Access</CardTitle>
                         <p className="text-gray-600 mt-2">Restricted area — authorized users only</p>
@@ -113,7 +113,7 @@ export default function AdminLoginPage() {
 
                             <Button
                                 type="submit"
-                                className="w-full bg-blue-800 hover:bg-blue-700 text-white h-11"
+                                className="w-full bg-orange-800 hover:bg-orange-700 text-white h-11"
                                 disabled={loading}
                             >
                                 {loading ? (
@@ -127,7 +127,7 @@ export default function AdminLoginPage() {
                             </Button>
 
                             <div className="text-center text-sm text-gray-600">
-                                <Link href="/" className="text-blue-800 hover:underline font-medium">
+                                <Link href="/" className="text-orange-800 hover:underline font-medium">
                                     Back to Home
                                 </Link>
                             </div>

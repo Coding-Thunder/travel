@@ -16,7 +16,7 @@ const BookingSuccessful: React.FC = () => {
         Booking Successful!
       </h1>
 
-      <CheckCircle size={100} className="text-blue-500 text-8xl mb-4" />
+      <CheckCircle size={100} className="text-orange-500 text-8xl mb-4" />
 
       <p className="text-xl mb-2 text-center">Thank you for your booking!</p>
 

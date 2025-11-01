@@ -56,7 +56,7 @@ export function FAQSection() {
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold hover:text-blue-800">
+              <AccordionTrigger className="text-left font-semibold hover:text-orange-800">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">{faq.answer}</AccordionContent>

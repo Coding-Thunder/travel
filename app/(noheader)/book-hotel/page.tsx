@@ -138,7 +138,7 @@ const BookHotelPage: React.FC = () => {
                     <form onSubmit={handleFinalSubmission} className="space-y-6">
                         {!showPayment && (
                             <div className="border-b pb-4 mb-4">
-                                <h2 className="text-xl text-blue mb-4">
+                                <h2 className="text-xl text-orange mb-4">
                                     Contact Information
                                 </h2>
                                 <div className="flex flex-col md:flex-row gap-4">
@@ -153,7 +153,7 @@ const BookHotelPage: React.FC = () => {
                                                 setContactInfo({ ...contactInfo, phone: phone || "" })
                                             }
                                             required
-                                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-orange-500 focus:ring focus:ring-orange-200 outline-none"
                                         />
                                     </div>
                                     <div className="w-full md:w-2/3">
@@ -169,7 +169,7 @@ const BookHotelPage: React.FC = () => {
                                             }
                                             placeholder="Enter Email Address"
                                             required
-                                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-orange-500 focus:ring focus:ring-orange-200"
                                         />
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@ const BookHotelPage: React.FC = () => {
                             <>
                                 {/* Payment Section */}
                                 <div className="border-b pb-4 mb-4">
-                                    <h2 className="text-xl text-blue mb-4">
+                                    <h2 className="text-xl text-orange mb-4">
                                         Payment Details
                                     </h2>
                                     <p className="text-sm text-green-600 mb-4">
@@ -244,7 +244,7 @@ const BookHotelPage: React.FC = () => {
 
                                 {/* Billing Section */}
                                 <div>
-                                    <h2 className="text-xl mb-4 text-blue">
+                                    <h2 className="text-xl mb-4 text-orange">
                                         Billing Details
                                     </h2>
                                     <p className="text-sm mb-4">
@@ -261,7 +261,7 @@ const BookHotelPage: React.FC = () => {
                                                     country: e.target.value,
                                                 })
                                             }
-                                            className="w-full h-12 border rounded-lg p-2 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                                            className="w-full h-12 border rounded-lg p-2 focus:border-orange-500 focus:ring focus:ring-orange-200"
                                         >
                                             <option value="">Select Country</option>
                                             {countries.map((country) => {
@@ -346,7 +346,7 @@ const BookHotelPage: React.FC = () => {
                                         <Button
                                             type="submit"
                                             disabled={loading}
-                                            className="py-8 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out flex flex-col focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="py-8 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-orange-700 transition duration-300 ease-in-out flex flex-col focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed"
                                         >
                                             {loading ? "Processing..." : "Confirm & Book"}
                                             <span className="capitalize text-xs flex items-center justify-center gap-2">

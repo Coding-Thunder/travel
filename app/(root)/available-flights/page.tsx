@@ -204,13 +204,13 @@ const AvailableFlights = () => {
           <div className="p-2 flex items-center gap-6">
             <Badge
               variant="outline"
-              className="border-blue text-blue flex items-center gap-2"
+              className="border-orange text-orange flex items-center gap-2"
             >
               <FaStar size={18} /> Recommended
             </Badge>
             <Badge
               variant="outline"
-              className="border-blue text-blue flex items-center gap-2"
+              className="border-orange text-orange flex items-center gap-2"
             >
               <AiFillThunderbolt size={18} /> Faster
             </Badge>
@@ -262,7 +262,7 @@ const AvailableFlights = () => {
                       >
                         Cheapest
                       </Badge>
-                      <p className="text-2xl font-bold text-blue">
+                      <p className="text-2xl font-bold text-orange">
                         ${finalPrice.toFixed(2)}
                       </p>
 
@@ -273,7 +273,7 @@ const AvailableFlights = () => {
                       )}
 
                       <label className="flex items-center gap-2 text-sm border rounded-lg px-2 py-1">
-                        <Checkbox className="accent-blue-500" />
+                        <Checkbox className="accent-orange-500" />
                         <span className="text-gray-600">
                           Baggage <span className="text-red-500">+$100</span>
                         </span>
@@ -281,7 +281,7 @@ const AvailableFlights = () => {
 
                       <Button
                         onClick={() => handleBookNow(flight)}
-                        className="w-full bg-blue-500 text-white hover:bg-blue-800"
+                        className="w-full bg-orange-500 text-white hover:bg-orange-800"
                       >
                         Select Ticket
                       </Button>
@@ -303,7 +303,7 @@ const AvailableFlights = () => {
                 onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
                 disabled={currentPage === 1}
                 variant="outline"
-                className="border-blue text-blue hover:bg-blue hover:text-white"
+                className="border-orange text-orange hover:bg-orange hover:text-white"
               >
                 Prev
               </Button>
@@ -316,7 +316,7 @@ const AvailableFlights = () => {
                 }
                 disabled={currentPage === totalPages}
                 variant="outline"
-                className="border-blue text-blue hover:bg-blue hover:text-white"
+                className="border-orange text-orange hover:bg-orange hover:text-white"
               >
                 Next
               </Button>

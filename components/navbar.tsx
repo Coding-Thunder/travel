@@ -35,34 +35,35 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
 
-            {/* Text Logo */}   <div className="relative w-32 h-32">
-              <Image
+            <p className="text-xl font-semibold"><span className="bg-orange-500 text-white p-2">{siteConfig.brand.firstName}</span> <span>{siteConfig.brand.lastName}</span></p>
+            <div className="relative w-32 h-32">
+              {/* <Image
                 src="/logo3.png"
                 alt="Logo"
                 fill
-              />
+              /> */}
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
             <Link href="/about">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
+              <Button variant="ghost" className="font-medium text-gray-700 hover:text-orange-500 hover:bg-orange-500/5">
                 About us
               </Button>
             </Link>
             <Link href="/support">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
+              <Button variant="ghost" className="font-medium text-gray-700 hover:text-orange-500 hover:bg-orange-500/5">
                 Contact
               </Button>
             </Link>
             <Link href="/destinations">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
+              <Button variant="ghost" className="font-medium text-gray-700 hover:text-orange-500 hover:bg-orange-500/5">
                 Destinations
               </Button>
             </Link>
             <Link href="/deals">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
+              <Button variant="ghost" className="font-medium text-gray-700 hover:text-orange-500 hover:bg-orange-500/5">
                 Deals
               </Button>
             </Link>
@@ -74,8 +75,8 @@ export function Navbar() {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="ghost" className="flex items-center gap-2 hover:bg-gray-50">
-                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                      <User className="h-4 w-4 text-primary" />
+                    <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center">
+                      <User className="h-4 w-4 text-orange-500" />
                     </div>
                     <span className="font-medium text-gray-900">{user?.name}</span>
                   </Button>
@@ -116,7 +117,7 @@ export function Navbar() {
                   </Button>
                 </Link>
                 <Link href="/signup">
-                  <Button className="font-medium shadow-sm">Sign Up</Button>
+                  <Button className="font-medium bg-orange-500 text-white hover:bg-orange-600 shadow-sm">Sign Up</Button>
                 </Link>
               </>
             )}
@@ -146,28 +147,28 @@ export function Navbar() {
                 <div className="flex flex-col gap-4 mt-8">
                   <Link
                     href="/about"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
+                    className="text-lg font-medium text-gray-900 hover:text-orange-500 py-2 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     About us
                   </Link>
                   <Link
                     href="/support"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
+                    className="text-lg font-medium text-gray-900 hover:text-orange-500 py-2 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     Contact us
                   </Link>
                   <Link
                     href="/destinations"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
+                    className="text-lg font-medium text-gray-900 hover:text-orange-500 py-2 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     Destinations
                   </Link>
                   <Link
                     href="/deals"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
+                    className="text-lg font-medium text-gray-900 hover:text-orange-500 py-2 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     Deals
@@ -177,21 +178,21 @@ export function Navbar() {
                     {isAuthenticated ? (
                       <>
                         <div className="flex items-center gap-2.5 py-2">
-                          <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                            <User className="h-4 w-4 text-primary" />
+                          <div className="w-8 h-8 rounded-full bg-orange-500/10 flex items-center justify-center">
+                            <User className="h-4 w-4 text-orange-500" />
                           </div>
                           <span className="font-medium text-gray-900">{user?.name}</span>
                         </div>
                         <Link
                           href="/my-bookings"
-                          className="block text-gray-900 hover:text-primary py-2 transition-colors"
+                          className="block text-gray-900 hover:text-orange-500 py-2 transition-colors"
                           onClick={() => setIsOpen(false)}
                         >
                           My Bookings
                         </Link>
                         <Link
                           href="/profile"
-                          className="block text-gray-900 hover:text-primary py-2 transition-colors"
+                          className="block text-gray-900 hover:text-orange-500 py-2 transition-colors"
                           onClick={() => setIsOpen(false)}
                         >
                           Profile Settings
@@ -199,7 +200,7 @@ export function Navbar() {
                         {isAdmin && (
                           <Link
                             href="/admin/dashboard"
-                            className="block text-gray-900 hover:text-primary py-2 transition-colors"
+                            className="block text-gray-900 hover:text-orange-500 py-2 transition-colors"
                             onClick={() => setIsOpen(false)}
                           >
                             Admin Dashboard
@@ -222,7 +223,7 @@ export function Navbar() {
                           </Button>
                         </Link>
                         <Link href="/signup" onClick={() => setIsOpen(false)}>
-                          <Button className="w-full font-medium">Sign Up</Button>
+                          <Button className="w-full bg-orange-500 hover:bg-orange-600 font-medium">Sign Up</Button>
                         </Link>
                       </>
                     )}

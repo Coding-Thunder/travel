@@ -26,7 +26,7 @@ const BillingInfo: React.FC<BillingFormProps> = ({ billingInfo, setBillingInfo, 
 
     return (
         <div>
-            <h2 className="text-xl mb-4 text-blue">Billing Details</h2>
+            <h2 className="text-xl mb-4 text-orange">Billing Details</h2>
             <p className="text-sm mb-4">As per Bank records or credit card company</p>
 
             {/* Country */}
@@ -113,7 +113,7 @@ const BillingInfo: React.FC<BillingFormProps> = ({ billingInfo, setBillingInfo, 
                 <Button
                     onClick={handleFinalSubmission}
                     disabled={!selectedFlight}
-                    className="py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 ease-in-out h-fit w-fit flex flex-col disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
+                    className="py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-orange-700 transition duration-300 ease-in-out h-fit w-fit flex flex-col disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-orange-300 focus:ring-opacity-50"
                 >
                     Confirm & Book
                     <span className='capitalize text-xs flex items-center justify-center gap-2'><Lock size={12} /> secure payment</span>

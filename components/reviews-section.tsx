@@ -62,7 +62,7 @@ export function ReviewsSection() {
           {visibleReviews.map((review) => (
             <Card key={review.id} className="hover:shadow-xl transition-all duration-300 border-border/50 bg-card">
               <CardContent className="p-8">
-                <Quote className="h-10 w-10 text-primary/20 mb-4" />
+                <Quote className="h-10 w-10 text-orange-500/20 mb-4" />
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star
@@ -88,7 +88,7 @@ export function ReviewsSection() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`h-2 rounded-full transition-all ${index === currentIndex ? "w-8 bg-primary" : "w-2 bg-border hover:bg-primary/50"
+              className={`h-2 rounded-full transition-all ${index === currentIndex ? "w-8 bg-orange-500" : "w-2 bg-border hover:bg-orange-500/50"
                 }`}
               aria-label={`Go to review ${index + 1}`}
             />

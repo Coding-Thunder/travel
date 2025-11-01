@@ -72,8 +72,8 @@ export default function LoginPage() {
       <main className="flex-1 bg-gray-50 flex items-center justify-center px-4 py-12">
         <Card className="w-full max-w-md">
           <CardHeader className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4">
-              <User className="h-8 w-8 text-blue-800" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4">
+              <User className="h-8 w-8 text-orange-800" />
             </div>
             <CardTitle className="text-2xl font-bold">Welcome Back</CardTitle>
             <p className="text-gray-600 mt-2">Sign in to your account to continue</p>
@@ -123,12 +123,12 @@ export default function LoginPage() {
                   <input type="checkbox" className="rounded" />
                   <span className="text-gray-600">Remember me</span>
                 </label>
-                {/* <Link href="/forgot-password" className="text-blue-800 hover:underline">
+                {/* <Link href="/forgot-password" className="text-orange-800 hover:underline">
                   Forgot password?
                 </Link> */}
               </div>
 
-              <Button type="submit" className="w-full bg-blue-800 hover:bg-blue-700 text-white h-11" disabled={loading}>
+              <Button type="submit" className="w-full bg-orange-800 hover:bg-orange-700 text-white h-11" disabled={loading}>
                 {loading ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -141,7 +141,7 @@ export default function LoginPage() {
 
               <div className="text-center text-sm text-gray-600">
                 Don't have an account?{" "}
-                <Link href="/signup" className="text-blue-800 hover:underline font-medium">
+                <Link href="/signup" className="text-orange-800 hover:underline font-medium">
                   Sign up
                 </Link>
               </div>

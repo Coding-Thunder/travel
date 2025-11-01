@@ -31,7 +31,7 @@ export function HeroSection() {
   // ]
 
   return (
-    <div className="relative min-h-[680px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+    <div className="relative min-h-[680px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-50 via-indigo-50 to-purple-50">
       {/* Background Carousel */}
       <div className="absolute inset-0">
         {heroImages.map((img, i) => (
@@ -62,16 +62,16 @@ export function HeroSection() {
             <DropdownMenuTrigger asChild>
               <Button
                 variant="outline"
-                className="flex items-center gap-2 bg-white/95 text-blue-900 border border-blue-200 hover:border-blue-400 hover:bg-white shadow-lg rounded-full px-6 py-3 text-lg font-semibold transition-all backdrop-blur-sm focus:outline-none focus:ring-0"
+                className="flex items-center gap-2 bg-white/95 text-orange-900 border border-orange-200 hover:border-orange-400 hover:bg-white shadow-lg rounded-full px-6 py-3 text-lg font-semibold transition-all backdrop-blur-sm focus:outline-none focus:ring-0"
               >
                 {(() => {
                   const active = dropdownOptions.find((o) => o.value === activeTab)
                   const Icon = active?.icon
                   return (
                     <>
-                      {Icon && <Icon className="h-5 w-5 text-blue-700" />}
+                      {Icon && <Icon className="h-5 w-5 text-orange-700" />}
                       <span>{active?.label}</span>
-                      <ChevronDown className="h-4 w-4 text-blue-700/80" />
+                      <ChevronDown className="h-4 w-4 text-orange-700/80" />
                     </>
                   )
                 })()}
@@ -81,19 +81,19 @@ export function HeroSection() {
 
             <DropdownMenuContent
               align="start"
-              className="min-w-[200px] mt-2 rounded-2xl bg-white/95 shadow-xl border border-blue-100 backdrop-blur-md p-1.5"
+              className="min-w-[200px] mt-2 rounded-2xl bg-white/95 shadow-xl border border-orange-100 backdrop-blur-md p-1.5"
             >
               {dropdownOptions.map(({ value, label, icon: Icon }) => (
                 <DropdownMenuItem
                   key={value}
                   onClick={() => setActiveTab(value as any)}
                   className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-base font-medium cursor-pointer transition-all ${activeTab === value
-                    ? "bg-blue-50 text-blue-800"
-                    : "text-gray-700 hover:bg-blue-50 hover:text-blue-800"
+                    ? "bg-orange-50 text-orange-800"
+                    : "text-gray-700 hover:bg-orange-50 hover:text-orange-800"
                     }`}
                 >
                   <Icon
-                    className={`h-5 w-5 ${activeTab === value ? "text-blue-700" : "text-gray-500"
+                    className={`h-5 w-5 ${activeTab === value ? "text-orange-700" : "text-gray-500"
                       }`}
                   />
                   {label}

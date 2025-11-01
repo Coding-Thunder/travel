@@ -9,12 +9,12 @@ export default function AboutPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16 md:py-20">
+        <section className="bg-gradient-to-r from-orange-900 to-orange-800 text-white py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">
               About {siteConfig.brand.name}
             </h1>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto text-pretty">
+            <p className="text-xl text-orange-100 max-w-2xl mx-auto text-pretty">
               Your trusted travel consultant partner for seamless travel experiences worldwide.
             </p>
           </div>
@@ -97,7 +97,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
-                  icon: <Shield className="h-8 w-8 text-blue-700" />,
+                  icon: <Shield className="h-8 w-8 text-orange-700" />,
                   title: "Secure Booking",
                   text: "Your data is protected with top-tier encryption and privacy standards.",
                 },
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   text: "We connect you to thousands of destinations across continents.",
                 },
                 {
-                  icon: <Award className="h-8 w-8 text-orange-600" />,
+                  icon: <Award className="h-8 w-8 text-orange-500" />,
                   title: "Best Deals",
                   text: "Unbeatable pricing without compromising service quality.",
                 },
@@ -145,11 +145,11 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
               <div>
                 <h4 className="font-semibold text-gray-900">Phone</h4>
-                <p className="text-blue-700">{siteConfig.brand.phone}</p>
+                <p className="text-orange-700">{siteConfig.brand.phone}</p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900">Email</h4>
-                <p className="text-blue-700">{siteConfig.brand.email}</p>
+                <p className="text-orange-700">{siteConfig.brand.email}</p>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900">Location</h4>

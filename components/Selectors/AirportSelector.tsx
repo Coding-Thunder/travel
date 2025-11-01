@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { Search } from "lucide-react"
+import { Plane, Search } from "lucide-react"
 import { IoLocation } from "react-icons/io5"
 import api from "@/lib/api/api-service"
 import type { Airport } from "@/lib/types"
@@ -41,7 +41,6 @@ export default function AirportSelector({ label, value, onSelectAirport, setIsOp
           countryCode: item.address?.countryCode || "",
           countryName: item.address?.countryName || "",
         }))
-        console.log(mapped, "mappped")
         setResults(mapped)
       } catch (err) {
         console.error("[v0] Error fetching airports:", err)
@@ -57,7 +56,7 @@ export default function AirportSelector({ label, value, onSelectAirport, setIsOp
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <div
-          className="w-full bg-white hover:bg-blue-50 rounded-lg flex items-center px-4 py-3 cursor-pointer border transition-colors"
+          className="w-full bg-white hover:bg-orange-50 rounded-lg flex items-center px-4 py-3 cursor-pointer border transition-colors"
           onClick={() => setOpen(true)}
         >
           <IoLocation size={22} className="text-gray-500" />
@@ -95,9 +94,12 @@ export default function AirportSelector({ label, value, onSelectAirport, setIsOp
                   setQuery("")
                   setOpen(false)
                 }}
-                className="cursor-pointer p-3 hover:bg-blue-50 rounded-md transition-colors"
+                className="cursor-pointer p-3 hover:bg-orange-50 rounded-md transition-colors"
               >
-                <p className="font-semibold text-sm">{airport.name}</p>
+                <div className="flex items-center bg-orange-500 rounded-xs p-2 mb-2 hover:opacity-50">
+                  <Plane className="text-white" />
+                  <p className="font-semibold text-sm  text-white w-full">{airport.name}</p>
+                </div>
                 <p className="text-xs text-gray-600">
                   {airport.cityName}, {airport.countryCode} ({airport.iataCode})
                 </p>

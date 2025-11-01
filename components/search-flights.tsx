@@ -103,9 +103,9 @@ const SearchFlights: React.FC<SearchFlightProps> = ({ withControllers = true }) 
               onClick={() => dispatch(setRoundTrip(index === 0))}
             >
               <div
-                className={`rounded-full border-2 p-0.5 transition-all duration-200 ${(index === 0 && isRoundTrip) || (index === 1 && !isRoundTrip)
-                  ? "border-primary bg-primary shadow-sm"
-                  : "border-gray-300 group-hover:border-gray-400"
+                className={`rounded-full p-0.5 transition-all duration-200 ${(index === 0 && isRoundTrip) || (index === 1 && !isRoundTrip)
+                  ? "border-orange bg-orange-500 shadow-sm"
+                  : "group-hover:border-gray-400"
                   }`}
               >
                 <Check
@@ -136,7 +136,7 @@ const SearchFlights: React.FC<SearchFlightProps> = ({ withControllers = true }) 
             </div>
 
             <div className="flex items-center justify-center sm:w-auto">
-              <div className="bg-primary p-2.5 rounded-full shadow-sm">
+              <div className="bg-orange-500 p-2.5 rounded-full shadow-sm">
                 <FaArrowRightArrowLeft className="text-white text-sm rotate-90 sm:rotate-0" />
               </div>
             </div>
@@ -183,7 +183,7 @@ const SearchFlights: React.FC<SearchFlightProps> = ({ withControllers = true }) 
           <div className="flex justify-center lg:justify-start">
             <Button
               type="submit"
-              className="w-full sm:w-auto lg:min-w-[220px] h-14 text-base font-semibold shadow-md hover:shadow-lg transition-all"
+              className="w-full bg-orange-500 hover:bg-orange-600 text-white sm:w-auto lg:min-w-[220px] h-14 text-base font-semibold shadow-md hover:shadow-lg transition-all"
               disabled={loading}
             >
               {loading ? <Loader className="animate-spin" /> : "Search Flights"}

@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 
 const HeaderLine = () => {
     return (
-        <section className="bg-gradient-to-r from-blue-800 via-indigo-600 to-blue-600 py-5">
+        <section className="bg-gradient-to-r from-orange-800 via-orange-600 to-orange-500 py-5">
             <div className="max-w-fit mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-4 text-white">
                 <motion.div
                     initial={{ opacity: 0, y: 8 }}
@@ -30,7 +30,7 @@ const HeaderLine = () => {
                     transition={{ delay: 0.2, duration: 0.4 }}
                 >
                     <a href={`tel:${siteConfig.brand.phoneLink}`}>
-                        <Button className="bg-white hover:bg-white text-blue-800 cursor-pointer"><PhoneCall /> Call Now"</Button>
+                        <Button className="bg-white hover:bg-white text-orange-800 cursor-pointer"><PhoneCall /> Call Now"</Button>
                     </a>
                 </motion.div>
             </div>

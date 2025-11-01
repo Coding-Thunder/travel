@@ -33,15 +33,15 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-6 text-lg">Contact Us</h3>
             <div className="space-y-4 text-sm">
               <div className="flex items-start gap-3">
-                <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <Phone className="h-5 w-5 mt-0.5 flex-shrink-0 text-orange-500" />
                 <span>{siteConfig.brand.phone}</span>
               </div>
               <div className="flex items-start gap-3">
-                <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <Mail className="h-5 w-5 text-orange-500 mt-0.5 flex-shrink-0" />
                 <span>{siteConfig.brand.email}</span>
               </div>
               <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <MapPin className="h-5 w-5 text-orange-500 mt-0.5 flex-shrink-0" />
                 <span>{siteConfig.brand.location}</span>
               </div>
             </div>
@@ -55,9 +55,9 @@ export function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="hover:text-primary transition-colors inline-flex items-center gap-2 group"
+                    className="hover:text-orange-500 transition-colors inline-flex items-center gap-2 group"
                   >
-                    <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-primary transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-slate-600 group-hover:bg-orange-500 transition-colors" />
                     {item.name}
                   </Link>
                 </li>
@@ -71,28 +71,28 @@ export function Footer() {
             <div className="flex gap-3 mb-8">
               <a
                 href={siteConfig.social.facebook}
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-orange-500 flex items-center justify-center transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href={siteConfig.social.twitter}
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-orange-500 flex items-center justify-center transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href={siteConfig.social.instagram}
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-orange-500 flex items-center justify-center transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
                 href={siteConfig.social.linkedin}
-                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-primary flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-orange-500 flex items-center justify-center transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />

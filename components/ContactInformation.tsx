@@ -34,7 +34,7 @@ const ContactInformation: React.FC<Props> = ({
     return (
         <>
             <div className="border-b pb-4 mb-4">
-                <h2 className="text-xl text-blue  mb-4">Contact Information</h2>
+                <h2 className="text-xl text-orange  mb-4">Contact Information</h2>
                 <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                     <div className="w-full md:w-1/3">
                         <label className="block text-base  mb-1">Contact Number *</label>
@@ -45,7 +45,7 @@ const ContactInformation: React.FC<Props> = ({
                                 setContactInfo({ ...contactInfo, phone: phone || "" })
                             }
                             required
-                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-blue-500 focus:ring focus:ring-blue-200 outline-none"
+                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-orange-500 focus:ring focus:ring-orange-200 outline-none"
                         />
                     </div>
                     <div className="w-full md:w-2/3">
@@ -58,7 +58,7 @@ const ContactInformation: React.FC<Props> = ({
                             }
                             placeholder="Enter Email Address"
                             required
-                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-blue-500 focus:ring focus:ring-blue-200"
+                            className="w-full border border-gray-300 rounded-lg p-2 h-12 focus:border-orange-500 focus:ring focus:ring-orange-200"
                         />
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const ContactInformation: React.FC<Props> = ({
                                                         e.target.value
                                                     )
                                                 }
-                                                className="mr-2 focus:ring-blue-500"
+                                                className="mr-2 focus:ring-orange-500"
                                             />
                                             <label
                                                 htmlFor={`male-adult-${index}`}
@@ -124,7 +124,7 @@ const ContactInformation: React.FC<Props> = ({
                                                         e.target.value
                                                     )
                                                 }
-                                                className="mr-2 focus:ring-blue-500"
+                                                className="mr-2 focus:ring-orange-500"
                                             />
                                             <label
                                                 htmlFor={`female-adult-${index}`}
@@ -244,7 +244,7 @@ const ContactInformation: React.FC<Props> = ({
                                                         e.target.value
                                                     )
                                                 }
-                                                className="mr-2 focus:ring-blue-500"
+                                                className="mr-2 focus:ring-orange-500"
                                             />
                                             <label
                                                 htmlFor={`male-children-${index}`}
@@ -268,7 +268,7 @@ const ContactInformation: React.FC<Props> = ({
                                                         e.target.value
                                                     )
                                                 }
-                                                className="mr-2 focus:ring-blue-500"
+                                                className="mr-2 focus:ring-orange-500"
                                             />
                                             <label
                                                 htmlFor={`female-children-${index}`}
@@ -396,7 +396,7 @@ const ContactInformation: React.FC<Props> = ({
                                                         e.target.value
                                                     )
                                                 }
-                                                className="mr-2 focus:ring-blue-500"
+                                                className="mr-2 focus:ring-orange-500"
                                             />
                                             <label
                                                 htmlFor={`male-infant-${index}`}
@@ -420,7 +420,7 @@ const ContactInformation: React.FC<Props> = ({
                                                         e.target.value
                                                     )
                                                 }
-                                                className="mr-2 focus:ring-blue-500"
+                                                className="mr-2 focus:ring-orange-500"
                                             />
                                             <label
                                                 htmlFor={`female-infant-${index}`}
@@ -524,7 +524,7 @@ const ContactInformation: React.FC<Props> = ({
                 )}
             </div>
             {/* End Travelers Information */}
-            <div className="flex justify-center mt-4 bg-blue-500 text-white w-fit ml-auto rounded-md">
+            <div className="flex justify-center mt-4 bg-orange-500 text-white w-fit ml-auto rounded-md">
                 <Button onClick={handleCardDetailsShow}>Next</Button>
             </div>
         </>

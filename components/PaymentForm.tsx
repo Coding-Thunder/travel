@@ -15,7 +15,7 @@ interface Props {
 const PaymentForm: React.FC<Props> = ({ cardInfo, setCardInfo }) => {
     return (
         <div>
-            <h2 className="text-xl text-blue mb-4">Payment Details</h2>
+            <h2 className="text-xl text-orange mb-4">Payment Details</h2>
             <p className="text-sm text-green-600 mb-4">
                 All card information is fully encrypted, secure and protected.
             </p>

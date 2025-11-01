@@ -87,11 +87,11 @@ export default function DestinationsPage() {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-800 to-blue-800 text-white py-16">
+        <section className="bg-gradient-to-br from-orange-800 to-orange-800 text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Explore Amazing Destinations</h1>
-              <p className="text-xl text-blue-100 max-w-2xl mx-auto text-pretty">
+              <p className="text-xl text-orange-100 max-w-2xl mx-auto text-pretty">
                 Discover the world's most beautiful places and create unforgettable memories
               </p>
             </div>
@@ -128,7 +128,7 @@ export default function DestinationsPage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-sm text-gray-500">Starting from</p>
-                        <p className="text-2xl font-bold text-blue-800">${destination.startingPrice}</p>
+                        <p className="text-2xl font-bold text-orange-800">${destination.startingPrice}</p>
                       </div>
                       <CallNow />
                     </div>

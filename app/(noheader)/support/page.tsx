@@ -34,11 +34,11 @@ export default function SupportPage() {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-800 to-blue-800 text-white py-16">
+        <section className="bg-gradient-to-br from-orange-800 to-orange-800 text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Contact Support</h1>
-              <p className="text-xl text-blue-100 max-w-2xl mx-auto text-pretty">
+              <p className="text-xl text-orange-100 max-w-2xl mx-auto text-pretty">
                 We're here to help! Reach out to us anytime
               </p>
             </div>
@@ -54,8 +54,8 @@ export default function SupportPage() {
                 <Card>
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="bg-blue-100 p-3 rounded-lg">
-                        <Phone className="h-6 w-6 text-blue-800" />
+                      <div className="bg-orange-100 p-3 rounded-lg">
+                        <Phone className="h-6 w-6 text-orange-800" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
@@ -99,7 +99,7 @@ export default function SupportPage() {
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
                       <div className="bg-orange-100 p-3 rounded-lg">
-                        <Clock className="h-6 w-6 text-orange-600" />
+                        <Clock className="h-6 w-6 text-orange-500" />
                       </div>
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
@@ -174,7 +174,7 @@ export default function SupportPage() {
                         />
                       </div>
 
-                      <Button type="submit" className="w-full bg-blue-800 hover:bg-blue-700">
+                      <Button type="submit" className="w-full bg-orange-800 hover:bg-orange-700">
                         Send Message
                       </Button>
                     </form>

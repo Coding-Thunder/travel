@@ -174,6 +174,7 @@ const BookNowPage: React.FC = () => {
     try {
       setLoading(true); // Start loading
       const response = await apiService.createBooking(bookingDetails);
+      // console.log(response)
       // Show success toast notification
       setLoading(false);
       if (response) {
@@ -359,7 +360,7 @@ const BookNowPage: React.FC = () => {
                       </p>
                     </div>
                     <Divider />
-                    <div className="w-full flex items-center gap-4 justify-between text-blue-800 text-xl font-semibold">
+                    <div className="w-full flex items-center gap-4 justify-between text-orange-800 text-xl font-semibold">
                       <p className="w-fit">Total Price ( $ )</p>
                       <p className="w-fit">
                         {" "}

@@ -14,7 +14,7 @@ const NoFlightsAvailable = () => {
                     We couldn&apos;t find any flights matching your search criteria. Please try adjusting your filters.
                 </p>
                 <Button
-                    className="mt-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-800"
+                    className="mt-6 bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-800"
                     onClick={() => router.back()} // Go back to the previous page
                 >
                     Go Back

@@ -11,7 +11,7 @@ interface CallNowProps {
 const CallNow: FC<CallNowProps> = ({ withNumber = false }) => {
     return (
         <a href={`tel:${siteConfig.brand.phoneLink}`}>
-            <Button className="bg-blue-700 hover:bg-blue-600 cursor-pointer"><PhoneCall /> {withNumber ? siteConfig.brand.phone : "Call Now"}</Button>
+            <Button className="bg-orange-500 hover:bg-orange-600 cursor-pointer"><PhoneCall /> {withNumber ? siteConfig.brand.phone : "Call Now"}</Button>
         </a>
     )
 }

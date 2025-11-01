@@ -96,7 +96,7 @@ const SearchHotels: React.FC = () => {
                     variant="outline"
                     className="w-full justify-start text-left font-medium text-gray-700"
                 >
-                    <Calendar className="mr-2 h-4 w-4 text-blue-600" />
+                    <Calendar className="mr-2 h-4 w-4 text-orange-500" />
                     {selectedDate ? format(selectedDate, "PPP") : label}
                 </Button>
             </PopoverTrigger>
@@ -179,7 +179,7 @@ const SearchHotels: React.FC = () => {
                                         setSelectedCity(city);
                                         setCityQuery("");
                                     }}
-                                    className="p-2 hover:bg-blue-50 cursor-pointer"
+                                    className="p-2 hover:bg-orange-50 cursor-pointer"
                                 >
                                     <p className="font-semibold text-gray-800">{city.name}</p>
                                     <p className="text-sm text-gray-500">
@@ -241,7 +241,7 @@ const SearchHotels: React.FC = () => {
                 <Button
                     type="submit"
                     disabled={loading}
-                    className="w-full  sm:w-fit  h-14 text-base font-semibold shadow-md hover:shadow-lg transition-all bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center gap-2"
+                    className="w-full  sm:w-fit  h-14 text-base font-semibold shadow-md hover:shadow-lg transition-all bg-orange-500 hover:bg-orange-700 text-white flex items-center justify-center gap-2"
                 >
                     {loading ? <Loader className="animate-spin" /> : <Search size={16} />}
                     {!loading && <span>Search Hotels</span>}

@@ -306,7 +306,7 @@ export default function SearchCar() {
             </div>
 
             <div className="flex items-center justify-center">
-              <div className="bg-primary p-2 rounded-full shadow-sm">
+              <div className="bg-orange-500 p-2 rounded-full shadow-sm">
                 <MapPin className="text-white text-xs" />
               </div>
             </div>

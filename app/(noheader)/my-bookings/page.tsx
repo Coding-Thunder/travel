@@ -317,7 +317,7 @@ const EmptyState = () => (
     <h3 className="text-xl font-semibold text-slate-800 mb-2">You have no upcoming trips</h3>
     <p className="text-slate-500 max-w-md mx-auto mb-6">When you book a trip, all your itinerary details will appear right here.</p>
     <Link href={routings.home}>
-      <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Start Planning a Trip</Button>
+      <Button size="lg" className="bg-orange-500 hover:bg-orange-700 text-white rounded-lg">Start Planning a Trip</Button>
     </Link>
   </Card>
 );
@@ -328,7 +328,7 @@ const LoginPrompt = () => (
     <h3 className="text-xl font-semibold text-slate-800 mb-2">See Your Trips</h3>
     <p className="text-slate-500 max-w-md mx-auto mb-6">Please log in to view your bookings and manage your travel plans.</p>
     <Link href={routings.sign_in}>
-      <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white rounded-lg">Log In</Button>
+      <Button size="lg" className="bg-orange-500 hover:bg-orange-700 text-white rounded-lg">Log In</Button>
     </Link>
   </Card>
 );

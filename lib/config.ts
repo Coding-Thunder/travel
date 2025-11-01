@@ -1,6 +1,8 @@
 export const siteConfig = {
   brand: {
     name: "Budget Travels",
+    firstName: "Budget",
+    lastName: "Travels",
     domain: "budgettravels4u.com",
     email: "support@budgettravels4u.com",
     phone: "+1-551-362-8471",

@@ -96,7 +96,7 @@ export default function ProfilePage() {
                     </div>
                   </div>
 
-                  <Button type="submit" className="w-full bg-blue-800 hover:bg-blue-700 text-white">
+                  <Button type="submit" className="w-full bg-orange-800 hover:bg-orange-700 text-white">
                     Save Changes
                   </Button>
                 </form>

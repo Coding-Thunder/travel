@@ -46,7 +46,7 @@ const CarCard = ({
   return (
     <div className="bg-white border rounded-lg shadow-sm hover:shadow-lg transition-shadow relative">
       {isTopPick && (
-        <div className="absolute -top-2 left-4 bg-blue-800 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+        <div className="absolute -top-2 left-4 bg-orange-800 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
           Top Pick
         </div>
       )}
@@ -84,7 +84,7 @@ const CarCard = ({
               </div>
             </div>
 
-            <p className="text-sm font-medium text-blue-800 mt-2">
+            <p className="text-sm font-medium text-orange-800 mt-2">
               {searchCriteria?.startLocationCode || "-"}
             </p>
             <p className="text-xs text-gray-500">Pickup Location</p>
@@ -104,7 +104,7 @@ const CarCard = ({
               </p>
             </div>
             <Button
-              className="w-full mt-4 bg-blue-800 text-white"
+              className="w-full mt-4 bg-orange-800 text-white"
               variant="default"
               onClick={() => onSelect && onSelect(offer)}
             >
@@ -121,7 +121,7 @@ const CarCard = ({
               alt={provider.name || "Provider"}
               className="h-6 object-contain"
             />
-            <div className="bg-blue-800 text-white font-bold text-sm px-2 py-0.5 rounded">
+            <div className="bg-orange-800 text-white font-bold text-sm px-2 py-0.5 rounded">
               {provider.name || "Unknown Provider"}
             </div>
             <div>
@@ -260,7 +260,7 @@ export default function CarsPage() {
         ].map((item) => (
           <div
             key={item.label}
-            className="text-white p-4 rounded shadow-sm flex gap-2 bg-blue-800"
+            className="text-white p-4 rounded shadow-sm flex gap-2 bg-orange-800"
           >
             <p className="text-sm">{item.label}</p>
             <span>-</span>
@@ -277,12 +277,12 @@ export default function CarsPage() {
         {!loading && !error && offers.length === 0 && (
           <div className="text-center py-16 text-gray-500">
             <p>Oops no cars found at this moment! Try calling our team</p>
-            <div className="mt-4 flex w-fit items-center bg-blue-800 rounded-md  mx-auto px-4">
+            <div className="mt-4 flex w-fit items-center bg-orange-800 rounded-md  mx-auto px-4">
               <Phone className="text-white" />
 
               <Button
                 variant="secondary"
-                className="w-fit flex items-center justify-center gap-2 bg-blue-800 text-white"
+                className="w-fit flex items-center justify-center gap-2 bg-orange-800 text-white"
                 asChild
               >
                 <a href="tel:+1234567890">Call Now</a>
@@ -307,7 +307,7 @@ export default function CarsPage() {
         {totalPages > 1 && (
           <div className="flex justify-center items-center gap-3 mt-6">
             <Button
-              className="bg-blue-800 text-white"
+              className="bg-orange-800 text-white"
               onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
               disabled={currentPage === 1}
             >
@@ -317,7 +317,7 @@ export default function CarsPage() {
               Page {currentPage} of {totalPages}
             </span>
             <Button
-              className="bg-blue-800 text-white"
+              className="bg-orange-800 text-white"
               onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
               disabled={currentPage === totalPages}
             >
@@ -365,7 +365,7 @@ export default function CarsPage() {
           )}
           <DialogFooter className="mt-4">
             <Button
-              className="w-full bg-blue-800 text-white"
+              className="w-full bg-orange-800 text-white"
               variant="default"
               onClick={handleConfirm}
             >

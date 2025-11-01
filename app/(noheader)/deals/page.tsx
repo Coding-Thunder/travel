@@ -80,14 +80,14 @@ export default function DealsPage() {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-500 to-blue-600 text-white py-16">
+        <section className="bg-gradient-to-br from-orange-500 to-orange-500 text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <div className="flex items-center justify-center gap-2 mb-4">
                 <Tag className="h-8 w-8" />
                 <h1 className="text-4xl md:text-5xl font-bold text-balance">Exclusive Deals & Offers</h1>
               </div>
-              <p className="text-xl text-blue-100 max-w-2xl mx-auto text-pretty">
+              <p className="text-xl text-orange-100 max-w-2xl mx-auto text-pretty">
                 Save big on your next adventure with our limited-time special offers
               </p>
             </div>
@@ -102,7 +102,7 @@ export default function DealsPage() {
                 <Card key={deal.id} className="overflow-hidden hover:shadow-xl transition-shadow">
                   <div className="relative h-48">
                     <Image src={deal.image || "/placeholder.svg"} alt={deal.title} fill className="object-cover" />
-                    <Badge className="absolute top-4 right-4 bg-blue-600 hover:bg-blue-700 text-white font-bold px-3 py-1">
+                    <Badge className="absolute top-4 right-4 bg-orange-500 hover:bg-orange-700 text-white font-bold px-3 py-1">
                       <Percent className="h-3 w-3 mr-1" />
                       {deal.discount}
                     </Badge>

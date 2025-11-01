@@ -33,7 +33,7 @@ export default function TravelerSelector({
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <div className="w-full bg-white hover:bg-blue-50 rounded-lg flex items-center px-4 py-3 cursor-pointer border transition-colors">
+        <div className="w-full bg-white hover:bg-orange-50 rounded-lg flex items-center px-4 py-3 cursor-pointer border transition-colors">
           <Users size={22} className="text-gray-500" />
           <div className="ml-3 flex flex-col items-start overflow-hidden">
             <p className="text-xs font-medium text-gray-500">{label}</p>
