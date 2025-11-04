@@ -60,6 +60,7 @@ export default function SupportPage() {
                       <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                         <p className="text-gray-600">{siteConfig.brand.phone}</p>
+                        <p className="text-gray-600">+1-855-761-6979</p>
                         <p className="text-sm text-gray-500 mt-1">Mon-Fri 9am-6pm EST</p>
                       </div>
                     </div>
