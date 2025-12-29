@@ -17,6 +17,7 @@ import { Menu } from "lucide-react"
 import { useState } from "react"
 import { siteConfig } from "@/lib/config"
 import Image from "next/image"
+import Logo from "./Logo"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,7 +37,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
 
             {/* Text Logo   <div className="relative w-32 h-32"> */}
-            <p className="text-2xl">Rental <span className="text-white bg-blue-600 p-2 rounded-md">Confirmation</span>.com</p>
+            <Logo />
             {/* <Image
                 src="/logo3.png"
                 alt="Logo"
@@ -135,13 +136,8 @@ export function Navbar() {
                 <SheetHeader>
                   <SheetTitle className="flex items-center gap-2">
 
-                    {/* Text Logo */}   <div className="relative w-32 h-32">
-                      <Image
-                        src="/logo3.png"
-                        alt="Logo"
-                        fill
-                      />
-                    </div>
+                    <div className="mt-12"><Logo small /></div>
+
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-4 mt-8">

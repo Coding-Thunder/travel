@@ -3,6 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Plane, Mail, Phone, MapPin } fr
 import { siteConfig } from "@/lib/config"
 import Image from "next/image"
 import Payment from "@/public/png/payment.png";
+import Logo from "./Logo";
 
 
 export function Footer() {
@@ -15,11 +16,7 @@ export function Footer() {
             <div className="w-fit h-fit">
 
               {/* Text Logo */}   <div className="relative w-32 h-32">
-                <Image
-                  src="/logowhite.png"
-                  alt="Logo"
-                  fill
-                />
+                <Logo />
               </div>
             </div>
             <p className="text-sm mb-6 leading-relaxed text-slate-400">
