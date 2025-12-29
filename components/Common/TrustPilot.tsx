@@ -1,31 +1,35 @@
-"use client"
-import { trustPilotScript } from '@/lib/utils';
-import Link from 'next/link';
-import React, { useEffect } from 'react';
+"use client";
+
+import { useEffect } from "react";
+import Link from "next/link";
+import { trustPilotScript } from "@/lib/utils";
+
+const SCRIPT_ID = "trustpilot-bootstrap";
 
 const TrustPilot = () => {
   useEffect(() => {
-    // Check if the Trustpilot script already exists
-    if (!document.querySelector(`script[src="${trustPilotScript}"]`)) {
-      const script = document.createElement('script');
-      script.src = trustPilotScript;
-      script.async = true;
-      document.head.appendChild(script);
+    if (document.getElementById(SCRIPT_ID)) return;
 
-      return () => {
-        // Clean up the script if the component unmounts
-        document.head.removeChild(script);
-      };
-    }
+    const script = document.createElement("script");
+    script.id = SCRIPT_ID;
+    script.src = trustPilotScript;
+    script.async = true;
+
+    document.head.appendChild(script);
   }, []);
 
   return (
     <div
       className="trustpilot-widget"
-      data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="68e91008d254d19b908f61ed" data-style-height="52px" data-style-width="100%" data-token="dc7ccbcb-3930-4e13-8909-71ca6550fa65"
+      data-locale="en-US"
+      data-template-id="56278e9abfbbba0bdcd568bc"
+      data-businessunit-id="68d16f280cc45584c3911d45"
+      data-style-height="52px"
+      data-style-width="100%"
+      data-token="c7277dee-c73c-49c6-9ea6-9ec14b4d0e3f"
     >
       <Link
-        href="https://www.trustpilot.com/review/budgettravels4u.com"
+        href="https://www.trustpilot.com/review/rentalconfirmation.com"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -4,7 +4,7 @@ export const siteConfig = {
     domain: "rentalconfirmation.com",
     email: "support@rentalconfirmation.com",
     phone: "+1-(732)-576-6602",
-    phoneLink: "+1(7325766602",
+    phoneLink: "+17325766602",
     location: "Wyoming, United States",
     poweredBy: "Amadeus",
   },
@@ -13,8 +13,8 @@ export const siteConfig = {
     background: "white",
   },
   admin: {
-    email: "test@test.com",
-    password: "1234",
+    email: "admin@rc.com",
+    password: "221457",
   },
   navigation: {
     main: [
@@ -45,7 +45,6 @@ export const siteConfig = {
   },
   productionServerUrl: "https://api.rentalconfirmation.com",
   localServerUrl: "http://localhost:3002",
-
 }
 
 export const config = siteConfig
