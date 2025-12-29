@@ -1,10 +1,10 @@
 export const siteConfig = {
   brand: {
-    name: "Budget Travels4u",
-    domain: "budgettravels4u.com",
-    email: "support@budgettravels4u.com",
-    phone: "+1-551-362-8471",
-    phoneLink: "+15513628471",
+    name: "Rental Confirmation.com",
+    domain: "rentalconfirmation.com",
+    email: "support@rentalconfirmation.com",
+    phone: "+1-(732)-576-6602",
+    phoneLink: "+1(7325766602",
     location: "Wyoming, United States",
     poweredBy: "Amadeus",
   },
@@ -41,11 +41,10 @@ export const siteConfig = {
     linkedin: "#",
   },
   api: {
-    baseUrl: process.env.NODE_ENV === "production" ? "https://api.budgettravels4u.com" : "https://api.budgettravels4u.com",
+    baseUrl: process.env.NODE_ENV === "production" ? "https://api.rentalconfirmation.com" : "https://api.rentalconfirmation.com",
   },
-  productionServerUrl: "https://api.budgettravels4u.com",
+  productionServerUrl: "https://api.rentalconfirmation.com",
   localServerUrl: "http://localhost:3002",
-  prodLocalServerUrl: "http://127.0.0.1:3002",
 
 }
 
