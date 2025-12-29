@@ -35,13 +35,14 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
 
-            {/* Text Logo */}   <div className="relative w-32 h-32">
-              <Image
+            {/* Text Logo   <div className="relative w-32 h-32"> */}
+            <p className="text-2xl">Rental <span className="text-white bg-blue-600 p-2 rounded-md">Confirmation</span>.com</p>
+            {/* <Image
                 src="/logo3.png"
                 alt="Logo"
                 fill
-              />
-            </div>
+              /> */}
+            {/* </div> */}
           </Link>
 
           {/* Desktop Navigation */}
