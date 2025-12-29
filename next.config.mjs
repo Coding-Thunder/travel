@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
+
   eslint: {
-    // Disable linting during the build process
     ignoreDuringBuilds: true,
   },
-  //   images: {
-  //     unoptimized: true,
-  //   },
+
+  output: 'standalone',
 };
 
 export default nextConfig;
