@@ -172,8 +172,7 @@ export function HeroSection() {
             Find Your Next Adventure
           </h1>
           <p className="text-xl md:text-2xl text-white/95 drop-shadow-lg font-medium">
-            Compare and book flights, hotels, and car rentals
-          </p>
+            Stop overpaying. Book cheaper flights today.          </p>
         </div>
 
         {/* Dropdown Selector */}
