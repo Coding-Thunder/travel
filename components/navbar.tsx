@@ -110,14 +110,14 @@ export function Navbar() {
               </DropdownMenu>
             ) : (
               <>
-                <Link href="/login">
+                {/* <Link href="/login">
                   <Button variant="ghost" className="font-medium hover:bg-gray-50">
                     Login
                   </Button>
                 </Link>
                 <Link href="/signup">
                   <Button className="font-medium shadow-sm">Sign Up</Button>
-                </Link>
+                </Link> */}
               </>
             )}
           </div>
@@ -216,14 +216,14 @@ export function Navbar() {
                       </>
                     ) : (
                       <>
-                        <Link href="/login" onClick={() => setIsOpen(false)}>
+                        {/* <Link href="/login" onClick={() => setIsOpen(false)}>
                           <Button variant="ghost" className="w-full font-medium">
                             Login
                           </Button>
                         </Link>
                         <Link href="/signup" onClick={() => setIsOpen(false)}>
                           <Button className="w-full font-medium">Sign Up</Button>
-                        </Link>
+                        </Link> */}
                       </>
                     )}
                   </div>

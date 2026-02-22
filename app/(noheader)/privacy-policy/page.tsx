@@ -115,7 +115,7 @@ const PrivacyPolicyPage: React.FC = () => {
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Introduction</h2>
             <p className="text-gray-700 leading-relaxed">
-              rentalconfirmation.com respects your privacy and is committed to protecting your personal information. This
+              budgettravels4u.com respects your privacy and is committed to protecting your personal information. This
               policy explains what data we collect, how we use it, and your rights as a user.
             </p>
           </section>

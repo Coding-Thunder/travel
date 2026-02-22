@@ -3,9 +3,9 @@ export const siteConfig = {
     name: "Budget Travels4u",
     domain: "budgettravels4u.com",
     email: "support@budgettravels4u.com",
-    phone: "+1-551-362-8471",
-    phoneLink: "+15513628471",
-    location: "Wyoming, United States",
+    phone: "+1-551-355-3653",
+    phoneLink: "+15513553653",
+    location: "1309 Coffeen Avenue STE 1200 Shreridan, Wyoming 82801 United States",
     poweredBy: "Amadeus",
   },
   theme: {

@@ -353,20 +353,7 @@ export const formatCustomFlightDate = (dateStr: string): string => {
 };
 
 
-export const BUSINESS = {
-  phone: {
-    display: "+1-551-362-8471",
-    call: "+15513628471"
-  },
-  emails: {
-    main: "support@budgettravels4u.com"
-  },
-  brand_name: {
-    first: "Budget",
-    second: "Travels4U"
-  },
-  domain: "budgettravels4u.com"
-};
+
 export const testimonials = [
   { name: "Ethan Parker", testimonial: "Booked my SUV over the phone, the agent guided me perfectly. Pickup was seamless.", date: "Sep 20, 2025", rating: 5, service: "Cars" },
   { name: "Liam Roberts", testimonial: "Called to confirm my rental in Dallas, got everything sorted in minutes.", date: "Sep 12, 2025", rating: 4, service: "Cars" },
