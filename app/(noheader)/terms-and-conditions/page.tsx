@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { BUSINESS } from "@/lib/utils";
+import { siteConfig } from "@/lib/config";
 
 const TermsAndConditionsPage: React.FC = () => {
   const printRef = useRef<HTMLDivElement>(null);
@@ -131,7 +131,7 @@ const TermsAndConditionsPage: React.FC = () => {
             <h2 className="text-2xl font-bold mb-4 text-gray-900">Contact Information</h2>
             <p className="text-gray-700 mb-2">
               For any questions regarding these Terms and Conditions, contact us at{" "}
-              <strong>{BUSINESS.emails.main}</strong> or call {BUSINESS.phone.display}.
+              <strong>{siteConfig.brand.email}</strong> or call {siteConfig.brand.phone}.
             </p>
             {/* <p className="text-gray-700">Address: 1039 Coffen Avenue, STE 1200, Sheridan, Wyoming, 82801</p> */}
           </section>

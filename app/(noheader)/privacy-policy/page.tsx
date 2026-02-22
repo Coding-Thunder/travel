@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useRef } from "react";
-import { BUSINESS } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/config";
 
 const PrivacyPolicyPage: React.FC = () => {
   const printRef = useRef<HTMLDivElement>(null);
@@ -90,7 +90,7 @@ const PrivacyPolicyPage: React.FC = () => {
     {
       heading: "l) Contact and complaints",
       subitems: [
-        `For questions, requests, or complaints regarding your personal data, contact us at ${BUSINESS.emails.main}.`,
+        `For questions, requests, or complaints regarding your personal data, contact us at ${siteConfig.brand.email}.`,
       ],
     },
   ];
@@ -163,7 +163,7 @@ const PrivacyPolicyPage: React.FC = () => {
               communication preferences at any time.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              For any privacy-related requests, contact our support team at <strong>{BUSINESS.emails.main}</strong>.
+              For any privacy-related requests, contact our support team at <strong>{siteConfig.brand.email}</strong>.
             </p>
           </section>
 
@@ -175,10 +175,10 @@ const PrivacyPolicyPage: React.FC = () => {
             </p>
             <div className="space-y-2 text-gray-700">
               <p>
-                <strong>Email:</strong> {BUSINESS.emails.main}
+                <strong>Email:</strong> {siteConfig.brand.email}
               </p>
               <p>
-                <strong>Phone:</strong> {BUSINESS.phone.display}
+                <strong>Phone:</strong> {siteConfig.brand.phone}
               </p>
             </div>
           </section>
