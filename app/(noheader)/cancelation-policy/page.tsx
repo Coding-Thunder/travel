@@ -7,10 +7,10 @@ import { siteConfig } from "@/lib/config";
 export default function CancellationPolicyPage() {
   const term1 = [
     "Bookings cannot be canceled once confirmed within 24 hours, but in exceptional cases like medical emergencies, cancellations can be processed with applicable fees.",
-    "Acceptance of alternative arrangements is required when suggested by budgettravels4u.com as your mediator.",
-    "You may choose an alternative trip of similar standard if available. The alternative trip is treated as a new booking, and budgettravels4u.com will coordinate with the airline, hotel, or car rental provider for compensation or refunds related to your original booking.",
+    "Acceptance of alternative arrangements is required when suggested by rentalconfirmation.com as your mediator.",
+    "You may choose an alternative trip of similar standard if available. The alternative trip is treated as a new booking, and rentalconfirmation.com will coordinate with the airline, hotel, or car rental provider for compensation or refunds related to your original booking.",
     "Accepting a cancellation or canceling directly allows a refund only if the relevant provider’s (airline, hotel, or car rental) policy permits it. Refunds are subject to provider approval and applicable service charges.",
-    "Each booking is governed by the refund and cancellation terms of both budgettravels4u.com and the respective provider. By booking, you agree to abide by both.",
+    "Each booking is governed by the refund and cancellation terms of both rentalconfirmation.com and the respective provider. By booking, you agree to abide by both.",
   ];
 
 
@@ -33,27 +33,27 @@ export default function CancellationPolicyPage() {
     "Maximum tickets/bookings per transaction may be limited by provider policies.",
     "The name on each booking must exactly match the traveler’s valid ID or travel document.",
     "Travelers are responsible for ensuring valid documents (passport, visa, vaccination, etc.) required by the provider.",
-    "budgettravels4u.com may request credit card authorization or ID verification. Failure to provide this may result in cancellation.",
-    "In case of a system error or incorrect pricing, budgettravels4u.com reserves the right to correct the fare before confirmation. You are not obligated to continue with an erroneous booking.",
+    "rentalconfirmation.com may request credit card authorization or ID verification. Failure to provide this may result in cancellation.",
+    "In case of a system error or incorrect pricing, rentalconfirmation.com reserves the right to correct the fare before confirmation. You are not obligated to continue with an erroneous booking.",
   ];
   const term3 = [
     "Displayed booking prices exclude surcharges, taxes, and service fees, which appear on the final confirmation screen.",
-    "Charges on your payment method may appear under the provider’s or budgettravels4u.com’s name.",
+    "Charges on your payment method may appear under the provider’s or rentalconfirmation.com’s name.",
     "Administrative or service processing fees of up to $30 USD per booking may apply.",
-    "All service and processing fees charged by budgettravels4u.com are strictly non-refundable unless an error is proven to be on our part.",
+    "All service and processing fees charged by rentalconfirmation.com are strictly non-refundable unless an error is proven to be on our part.",
     "Customers agree to pay the total displayed trip cost at checkout.",
     "Phone reservations may include an additional non-refundable service fee (up to $50 USD).",
     "Service fees may differ for premium classes, international routes, or high-risk destinations.",
-    "In supplier-side cancellations (e.g., airline flight cancellations), refunds are issued per the supplier’s policy. budgettravels4u.com does not guarantee refund amounts or timelines.",
+    "In supplier-side cancellations (e.g., airline flight cancellations), refunds are issued per the supplier’s policy. rentalconfirmation.com does not guarantee refund amounts or timelines.",
   ];
 
   const term4 = [
     "Refunds are processed only if the provider’s policy allows cancellation and refund.",
     "No refunds will be issued for no-shows unless explicitly permitted by fare or rate rules.",
-    "budgettravels4u.com assists in securing waivers from airlines, hotels, or car rental providers to facilitate refund requests.",
+    "rentalconfirmation.com assists in securing waivers from airlines, hotels, or car rental providers to facilitate refund requests.",
     "Refund timelines depend entirely on the provider’s processing time.",
     "All refunds are issued after deducting non-refundable service or processing fees.",
-    "To request a cancellation or refund, email support@budgettravels4u.com with your Booking Reference Number, Full Name, Date of Travel/Booking, and Reason for Cancellation. Response time: 24–48 business hours.",
+    "To request a cancellation or refund, email support@rentalconfirmation.com with your Booking Reference Number, Full Name, Date of Travel/Booking, and Reason for Cancellation. Response time: 24–48 business hours.",
   ];
 
 
@@ -65,7 +65,7 @@ export default function CancellationPolicyPage() {
   // ];
 
   const term6 = [
-    "Customers agree not to dispute fees if budgettravels4u.com and providers have followed applicable policies.",
+    "Customers agree not to dispute fees if rentalconfirmation.com and providers have followed applicable policies.",
     `For questions about charges, call ${siteConfig.brand.phone} or email Customer Service (${siteConfig.brand.email}) before disputing.`,
     "Unauthorized chargebacks may incur penalties and legal/collection costs.",
   ];

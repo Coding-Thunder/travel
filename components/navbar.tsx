@@ -17,6 +17,7 @@ import { Menu } from "lucide-react"
 import { useState } from "react"
 import { siteConfig } from "@/lib/config"
 import Image from "next/image"
+import { Logo } from "./Common/Logo"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -34,14 +35,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-
-            {/* Text Logo */}   <div className="relative w-32 h-32">
-              <Image
-                src="/logo3.png"
-                alt="Logo"
-                fill
-              />
-            </div>
+              <Logo/>
           </Link>
 
           {/* Desktop Navigation */}

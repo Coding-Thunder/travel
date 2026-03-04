@@ -117,7 +117,7 @@ export const handleError = (error: any, toast: any) => {
 
 export const config = {
   localServerUrl: "http://localhost:3002",
-  productionServerUrl: "https://api.budgettravels4u.com",
+  productionServerUrl: "https://api.rentalconfirmation.com",
 };
 
 export const getAirlineName = (carrierCode: string) => {

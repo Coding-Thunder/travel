@@ -41,9 +41,9 @@ export const siteConfig = {
     linkedin: "#",
   },
   api: {
-    baseUrl: process.env.NODE_ENV === "production" ? "https://api.budgettravels4u.com" : "https://api.budgettravels4u.com",
+    baseUrl: process.env.NODE_ENV === "production" ? "https://api.rentalconfirmation.com" : "https://api.rentalconfirmation.com",
   },
-  productionServerUrl: "https://api.budgettravels4u.com",
+  productionServerUrl: "https://api.rentalconfirmation.com",
   localServerUrl: "http://localhost:3002",
   prodLocalServerUrl: "http://127.0.0.1:3002",
 

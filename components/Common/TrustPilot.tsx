@@ -25,7 +25,7 @@ const TrustPilot = () => {
       data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="68e91008d254d19b908f61ed" data-style-height="52px" data-style-width="100%" data-token="dc7ccbcb-3930-4e13-8909-71ca6550fa65"
     >
       <Link
-        href="https://www.trustpilot.com/review/budgettravels4u.com"
+        href="https://www.trustpilot.com/review/rentalconfirmation.com"
         target="_blank"
         rel="noopener noreferrer"
       >
