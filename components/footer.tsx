@@ -3,6 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "luc
 import { siteConfig } from "@/lib/config"
 import Image from "next/image"
 import Payment from "@/public/png/payment.png";
+import { Logo } from "./Common/Logo";
 
 
 export function Footer() {
@@ -13,14 +14,7 @@ export function Footer() {
           {/* Brand Section */}
           <div>
             <div className="w-fit h-fit">
-
-              {/* Text Logo */}   <div className="relative w-32 h-32">
-                <Image
-                  src="/logowhite.png"
-                  alt="Logo"
-                  fill
-                />
-              </div>
+<Logo/>
             </div>
             <p className="text-sm mb-6 leading-relaxed text-slate-400">
               Your trusted partner for travel bookings worldwide. Experience seamless booking with the best prices.
