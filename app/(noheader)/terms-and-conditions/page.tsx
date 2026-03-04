@@ -14,10 +14,10 @@ const TermsAndConditionsPage: React.FC = () => {
   });
 
   const generalTerms = [
-    "By using rentalconfirmation.com, you agree to comply with these Terms and Conditions.",
+    "By using universalticketss.com, you agree to comply with these Terms and Conditions.",
     "You must provide accurate information when creating an account, making bookings, or communicating with our support team.",
     "You are responsible for keeping your account credentials confidential and notifying us of any unauthorized access.",
-    "rentalconfirmation.com acts as a travel aggregator/mediator. We do not operate flights or car rentals directly.",
+    "universalticketss.com acts as a travel aggregator/mediator. We do not operate flights or car rentals directly.",
     "All bookings are subject to provider rules, pricing, availability, and restrictions.",
     "We reserve the right to modify these Terms and Conditions at any time. Updates will be posted on this page.",
   ];
@@ -40,9 +40,9 @@ const TermsAndConditionsPage: React.FC = () => {
   ];
 
   const legalTerms = [
-    "rentalconfirmation.com is not liable for delays, cancellations, or other service disruptions caused by providers.",
+    "universalticketss.com is not liable for delays, cancellations, or other service disruptions caused by providers.",
     "We do not guarantee refunds or compensation beyond what the provider permits.",
-    "By using our platform, you waive claims against rentalconfirmation.com for any indirect, incidental, or consequential damages.",
+    "By using our platform, you waive claims against universalticketss.com for any indirect, incidental, or consequential damages.",
     "All disputes will be resolved under the applicable laws of our operating jurisdiction.",
     "We may share information with service providers or law enforcement if required by law or for security purposes.",
   ];

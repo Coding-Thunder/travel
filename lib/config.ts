@@ -1,9 +1,9 @@
 export const siteConfig = {
   brand: {
-    name: "Rental Confirmation",
-    domain: "rentalconfirmation.com",
-    email: "support@rentalconfirmation.com",
-    phone: "+1-551-307-1441",
+    name: "Universal Ticketss",
+    domain: "universalticketss.com",
+    email: "support@universalticketss.com",
+    phone: "+1-855-761-6979",
     phoneLink: "+15513071441",
     location: "1309 Coffeen Avenue STE 1200 Shreridan, Wyoming 82801 United States",
     poweredBy: "Amadeus",
@@ -41,9 +41,9 @@ export const siteConfig = {
     linkedin: "#",
   },
   api: {
-    baseUrl: process.env.NODE_ENV === "production" ? "https://api.rentalconfirmation.com" : "https://api.rentalconfirmation.com",
+    baseUrl: process.env.NODE_ENV === "production" ? "https://api.universalticketss.com" : "https://api.universalticketss.com",
   },
-  productionServerUrl: "https://api.rentalconfirmation.com",
+  productionServerUrl: "https://api.universalticketss.com",
   localServerUrl: "http://localhost:3002",
   prodLocalServerUrl: "http://127.0.0.1:3002",
 
