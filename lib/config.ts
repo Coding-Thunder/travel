@@ -1,10 +1,10 @@
 export const siteConfig = {
   brand: {
-    name: "Budget Travels4u",
-    domain: "budgettravels4u.com",
-    email: "support@budgettravels4u.com",
-    phone: "+1-551-355-3653",
-    phoneLink: "+15513553653",
+    name: "Rental Confirmation",
+    domain: "rentalconfirmation.com",
+    email: "support@rentalconfirmation.com",
+    phone: "+1-551-307-1441",
+    phoneLink: "+15513071441",
     location: "1309 Coffeen Avenue STE 1200 Shreridan, Wyoming 82801 United States",
     poweredBy: "Amadeus",
   },
