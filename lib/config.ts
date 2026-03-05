@@ -4,7 +4,7 @@ export const siteConfig = {
     domain: "universalticketss.com",
     email: "support@universalticketss.com",
     phone: "+1-855-761-6979",
-    phoneLink: "+15513071441",
+    phoneLink: "+18557616979",
     location: "1309 Coffeen Avenue STE 1200 Shreridan, Wyoming 82801 United States",
     poweredBy: "Amadeus",
   },

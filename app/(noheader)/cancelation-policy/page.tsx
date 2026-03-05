@@ -99,7 +99,7 @@ export default function CancellationPolicyPage() {
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {siteConfig.brand.name} acts as an Online Travel Agency (OTA) facilitating bookings for flights, hotels, and car rentals through trusted third-party service providers, including airlines, hotels, car rental agencies, and global distribution systems such as Amadeus.
 
-                    All reservations made through our platform are subject to the individual provider’s terms, refund rules, and cancellation policies. By booking through Budget Travels4U, you acknowledge and accept these terms
+                    All reservations made through our platform are subject to the individual provider’s terms, refund rules, and cancellation policies. By booking through Univesalticketss.com, you acknowledge and accept these terms
                   </p>
                 </div>
               </div>
