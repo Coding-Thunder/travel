@@ -24,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Ads Global Site Tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16727173537"
           strategy="beforeInteractive"

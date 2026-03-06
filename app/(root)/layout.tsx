@@ -9,8 +9,7 @@ import { HeroSection } from "@/components/hero-section"
 
 export const metadata: Metadata = {
   title: `${siteConfig.brand.name} - Travel Booking Made Easy`,
-  description: `Book flights and rental cars with ${siteConfig.brand.name}. Powered by ${siteConfig.brand.poweredBy}.`,
-  generator: "v0.app",
+  description: `Book flights and rental cars with ${siteConfig.brand.name}`,
 }
 
 export default function RootLayout({
