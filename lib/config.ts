@@ -1,6 +1,6 @@
 export const siteConfig = {
   brand: {
-    name: "Autrova",
+    name: "Autrova 4u",
     domain: "autrova.com",
     email: "confirmation@autrova.com",
     phone: "+1-888-383-7558",

@@ -126,6 +126,7 @@ import SearchCar from "@/components/search-car"
 import SearchHotels from "./search-hotels"
 import CallNow from "./CallNow"
 import CallNow2 from "./CallNow2"
+import { siteConfig } from "@/lib/config"
 
 // const heroImages = [
 //   "/tropical-sunset-palms.png",
@@ -186,7 +187,7 @@ export function HeroSection() {
           </p>
         </div>
 <div className="flex justify-center">
-                        <CallNow2/>
+                        <CallNow2 withNumber={siteConfig.brand.phone}/>
 
 </div>
 
