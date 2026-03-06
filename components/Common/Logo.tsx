@@ -35,7 +35,8 @@ export function Logo({
                     <span className="text-blue-600">
                         {siteConfig.brand.name.split(" ")[0]}
                     </span>
-                    <span>         
+                    {" "}
+                    <span className="text-orange-600">         
                          {siteConfig.brand.name.split(" ")[1]}
                     </span>
                 </p>
