@@ -15,7 +15,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
   const privacyTerms1 = [
     "As a travel aggregator/mediator, we collect information to help you compare and book flights and car rentals:",
-    "a) Information you provide directly when creating accounts, making bookings through our platform, or contacting customer support. This may include name, email, phone number, billing info, and travel preferences.",
+    "a) Information you provide directly when creating accounts, making bookings through our platform, or contacting. This may include name, email, phone number, billing info, and travel preferences.",
     "b) Automatically collected information such as IP address, browser type, device information, and referring website.",
     "c) Information from third-party partners when you link your account or interact with partner services.",
   ];
@@ -163,7 +163,7 @@ const PrivacyPolicyPage: React.FC = () => {
               communication preferences at any time.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              For any privacy-related requests, contact our support team at <strong>{siteConfig.brand.email}</strong>.
+              For any privacy-related requests, contact our team at <strong>{siteConfig.brand.email}</strong>.
             </p>
           </section>
 

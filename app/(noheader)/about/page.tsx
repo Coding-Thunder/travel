@@ -56,7 +56,7 @@ export default function AboutPage() {
                   <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="h-8 w-8 text-green-600" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">24/7 Support</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">24/7</h3>
                   <p className="text-gray-600 text-sm text-pretty">Our dedicated team is always here to help you</p>
                 </CardContent>
               </Card>

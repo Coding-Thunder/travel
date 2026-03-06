@@ -53,7 +53,7 @@ export default function CancellationPolicyPage() {
     "autrova.com assists in securing waivers from airlines, hotels, or car rental providers to facilitate refund requests.",
     "Refund timelines depend entirely on the provider’s processing time.",
     "All refunds are issued after deducting non-refundable service or processing fees.",
-    "To request a cancellation or refund, email support@autrova.com with your Booking Reference Number, Full Name, Date of Travel/Booking, and Reason for Cancellation. Response time: 24–48 business hours.",
+    "To request a cancellation or refund, email confirmation@autrova.com with your Booking Reference Number, Full Name, Date of Travel/Booking, and Reason for Cancellation. Response time: 24–48 business hours.",
   ];
 
 
