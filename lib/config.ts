@@ -4,7 +4,7 @@ export const siteConfig = {
     domain: "autrova.com",
     email: "confirmation@autrova.com",
     phone: "+1-888-383-7558",
-    phoneLink: "+8883837558",
+    phoneLink: "+18883837558",
     location: "1309 Coffeen Avenue STE 1200 Shreridan, Wyoming 82801 United States",
     poweredBy: "Amadeus",
   },
