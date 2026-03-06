@@ -9,6 +9,7 @@ interface LogoProps {
     width?: number
     height?: number
     className?: string
+    withNumber?:boolean
 }
 
 export function Logo({
@@ -17,6 +18,7 @@ export function Logo({
     width = 40,
     height = 40,
     className = "",
+    withNumber = true
 }: LogoProps) {
     return (
         <Link href="/" className={`flex items-center gap-2 ${className}`}>
@@ -36,9 +38,11 @@ export function Logo({
                         {siteConfig.brand.name.split(" ")[0]}
                     </span>
                     {" "}
-                    <span className="text-orange-600">         
+                    {withNumber && (
+                        <span className="text-orange-600">         
                          {siteConfig.brand.name.split(" ")[1]}
                     </span>
+                    )}
                 </p>
             )}
         </Link>

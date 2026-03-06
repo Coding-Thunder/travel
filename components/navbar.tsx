@@ -128,13 +128,7 @@ export function Navbar() {
                 <SheetHeader>
                   <SheetTitle className="flex items-center gap-2">
 
-                    {/* Text Logo */}   <div className="relative w-32 h-32">
-                      <Image
-                        src="/logo3.png"
-                        alt="Logo"
-                        fill
-                      />
-                    </div>
+                    <Logo withNumber={false}/>
                   </SheetTitle>
                 </SheetHeader>
                 <div className="flex flex-col gap-4 mt-8">
