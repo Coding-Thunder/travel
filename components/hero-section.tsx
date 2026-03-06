@@ -124,11 +124,21 @@ import { Button } from "@/components/ui/button"
 import SearchFlights from "@/components/search-flights"
 import SearchCar from "@/components/search-car"
 import SearchHotels from "./search-hotels"
+import CallNow from "./CallNow"
+import CallNow2 from "./CallNow2"
+
+// const heroImages = [
+//   "/tropical-sunset-palms.png",
+//   "/snow-capped-mountains.png",
+//   "/city-night-skyline.png",
+//   "/desert-sand-dunes.png",
+// ]
+
 
 const heroImages = [
-  "/tropical-sunset-palms.png",
-  "/snow-capped-mountains.png",
-  "/city-night-skyline.png",
+"/baneer.avif",
+  "/banner1.avif",
+  "/banner2.webp",
   "/desert-sand-dunes.png",
 ]
 
@@ -175,6 +185,10 @@ export function HeroSection() {
             Compare and book flights, hotels, and car rentals
           </p>
         </div>
+<div className="flex justify-center">
+                        <CallNow2/>
+
+</div>
 
         {/* Search Boxes */}
         {/* <Card className="p-8 shadow-2xl bg-white rounded-xl border-0">
@@ -195,6 +209,7 @@ export function HeroSection() {
           ))}
         </div>
       </div>
+
     </div>
   )
 }
