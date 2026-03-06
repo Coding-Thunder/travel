@@ -74,7 +74,7 @@ export default function SignupPage() {
 
         toast({
           title: "Account created successfully",
-          description: "Welcome to RentalConfirmation.com4u!",
+          description: "Welcome to autrova.com4u!",
         })
 
         router.push("/")

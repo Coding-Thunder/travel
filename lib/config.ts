@@ -1,10 +1,10 @@
 export const siteConfig = {
   brand: {
-    name: "Rental Confirmation",
-    domain: "rentalconfirmation.com",
-    email: "support@rentalconfirmation.com",
-    phone: "+1-551-307-1441",
-    phoneLink: "+15513071441",
+    name: "Autrova",
+    domain: "autrova.com",
+    email: "confirmation@autrova.com",
+    phone: "+1-888-383-7558",
+    phoneLink: "+8883837558",
     location: "1309 Coffeen Avenue STE 1200 Shreridan, Wyoming 82801 United States",
     poweredBy: "Amadeus",
   },
@@ -41,9 +41,9 @@ export const siteConfig = {
     linkedin: "#",
   },
   api: {
-    baseUrl: process.env.NODE_ENV === "production" ? "https://api.rentalconfirmation.com" : "https://api.rentalconfirmation.com",
+    baseUrl: process.env.NODE_ENV === "production" ? "https://api.autrova.com" : "https://api.autrova.com",
   },
-  productionServerUrl: "https://api.rentalconfirmation.com",
+  productionServerUrl: "https://api.autrova.com",
   localServerUrl: "http://localhost:3002",
   prodLocalServerUrl: "http://127.0.0.1:3002",
 
