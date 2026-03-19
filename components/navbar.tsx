@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Plane, User, LogOut } from "lucide-react"
+import { User, LogOut, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useAppSelector, useAppDispatch } from "@/lib/store/hooks"
 import { logout } from "@/lib/store/slices/authSlice"
@@ -12,10 +12,14 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import { useState } from "react"
-import { siteConfig } from "@/lib/config"
 import Image from "next/image"
 import { Logo } from "./Common/Logo"
 
@@ -29,90 +33,83 @@ export function Navbar() {
     setIsOpen(false)
   }
 
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About us" },
+    { href: "/support", label: "Contact" },
+    // { href: "/destinations", label: "Destinations" },
+    { href: "/deals", label: "Deals" },
+  ]
+
+  const handleNavClick = () => {
+    setIsOpen(false)
+  }
+
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-              <Logo/>
+          <Link href="/" className="flex items-center gap-3">
+            <Logo />
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
-            <Link href="/about">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
-                About us
-              </Button>
-            </Link>
-            <Link href="/support">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
-                Contact
-              </Button>
-            </Link>
-            <Link href="/destinations">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
-                Destinations
-              </Button>
-            </Link>
-            <Link href="/deals">
-              <Button variant="ghost" className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5">
-                Deals
-              </Button>
-            </Link>
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                <Button
+                  variant="ghost"
+                  className="font-medium text-gray-700 hover:text-primary hover:bg-primary/5"
+                >
+                  {link.label}
+                </Button>
+              </Link>
+            ))}
           </div>
 
-          {/* Desktop Auth Buttons */}
+          {/* Desktop Auth */}
           <div className="hidden md:flex items-center gap-3">
-            {isAuthenticated ? (
+            {isAuthenticated && (
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="flex items-center gap-2 hover:bg-gray-50">
+                  <Button variant="ghost" className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                       <User className="h-4 w-4 text-primary" />
                     </div>
-                    <span className="font-medium text-gray-900">{user?.name}</span>
+                    <span className="font-medium">{user?.name}</span>
                   </Button>
                 </DropdownMenuTrigger>
+
                 <DropdownMenuContent align="end" className="w-56">
                   <DropdownMenuItem asChild>
-                    <Link href="/my-bookings" className="cursor-pointer">
-                      My Bookings
-                    </Link>
+                    <Link href="/my-bookings">My Bookings</Link>
                   </DropdownMenuItem>
+
                   <DropdownMenuItem asChild>
-                    <Link href="/profile" className="cursor-pointer">
-                      Profile Settings
-                    </Link>
+                    <Link href="/profile">Profile Settings</Link>
                   </DropdownMenuItem>
+
                   {isAdmin && (
                     <>
                       <DropdownMenuSeparator />
                       <DropdownMenuItem asChild>
-                        <Link href="/admin/dashboard" className="cursor-pointer">
-                          Admin Dashboard
-                        </Link>
+                        <Link href="/admin/dashboard">Admin Dashboard</Link>
                       </DropdownMenuItem>
                     </>
                   )}
+
                   <DropdownMenuSeparator />
-                  <DropdownMenuItem onClick={handleLogout} className="cursor-pointer text-destructive">
+                  <DropdownMenuItem
+                    onClick={handleLogout}
+                    className="text-destructive"
+                  >
                     <LogOut className="mr-2 h-4 w-4" />
                     Logout
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-            ) : (
-              <>
-                {/* <Link href="/login">
-                  <Button variant="ghost" className="font-medium hover:bg-gray-50">
-                    Login
-                  </Button>
-                </Link>
-                <Link href="/signup">
-                  <Button className="font-medium shadow-sm">Sign Up</Button>
-                </Link> */}
-              </>
             )}
           </div>
 
@@ -120,85 +117,71 @@ export function Navbar() {
           <div className="md:hidden">
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="hover:bg-gray-50">
+                <Button variant="ghost" size="icon">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
+
               <SheetContent side="right" className="w-[300px] sm:w-[400px] px-4">
                 <SheetHeader>
-                  <SheetTitle className="flex items-center gap-2">
-
-                    {/* Text Logo */}   <div className="relative w-32 h-32">
-                      <Image
-                        src="/logo3.png"
-                        alt="Logo"
-                        fill
-                      />
+                  <SheetTitle>
+                    <div className="relative w-28 h-28">
+                      <Image src="/logo3.png" alt="Logo" fill />
                     </div>
                   </SheetTitle>
                 </SheetHeader>
-                <div className="flex flex-col gap-4 mt-8">
-                  <Link
-                    href="/about"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    About us
-                  </Link>
-                  <Link
-                    href="/support"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Contact us
-                  </Link>
-                  <Link
-                    href="/destinations"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Destinations
-                  </Link>
-                  <Link
-                    href="/deals"
-                    className="text-lg font-medium text-gray-900 hover:text-primary py-2 transition-colors"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Deals
-                  </Link>
 
-                  <div className="pt-4 border-t border-gray-200 space-y-3">
-                    {isAuthenticated ? (
+                <div className="flex flex-col gap-4 mt-6">
+                  
+                  {/* Nav Links */}
+                  {navLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={handleNavClick}
+                      className="text-lg font-medium text-gray-900 hover:text-primary py-2"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+
+                  {/* Auth Section */}
+                  <div className="pt-4 border-t space-y-3">
+                    {isAuthenticated && (
                       <>
-                        <div className="flex items-center gap-2.5 py-2">
+                        <div className="flex items-center gap-2 py-2">
                           <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                             <User className="h-4 w-4 text-primary" />
                           </div>
-                          <span className="font-medium text-gray-900">{user?.name}</span>
+                          <span className="font-medium">{user?.name}</span>
                         </div>
+
                         <Link
                           href="/my-bookings"
-                          className="block text-gray-900 hover:text-primary py-2 transition-colors"
-                          onClick={() => setIsOpen(false)}
+                          onClick={handleNavClick}
+                          className="block py-2"
                         >
                           My Bookings
                         </Link>
+
                         <Link
                           href="/profile"
-                          className="block text-gray-900 hover:text-primary py-2 transition-colors"
-                          onClick={() => setIsOpen(false)}
+                          onClick={handleNavClick}
+                          className="block py-2"
                         >
                           Profile Settings
                         </Link>
+
                         {isAdmin && (
                           <Link
                             href="/admin/dashboard"
-                            className="block text-gray-900 hover:text-primary py-2 transition-colors"
-                            onClick={() => setIsOpen(false)}
+                            onClick={handleNavClick}
+                            className="block py-2"
                           >
                             Admin Dashboard
                           </Link>
                         )}
+
                         <Button
                           variant="destructive"
                           className="w-full justify-start gap-2 mt-2"
@@ -208,23 +191,13 @@ export function Navbar() {
                           Logout
                         </Button>
                       </>
-                    ) : (
-                      <>
-                        {/* <Link href="/login" onClick={() => setIsOpen(false)}>
-                          <Button variant="ghost" className="w-full font-medium">
-                            Login
-                          </Button>
-                        </Link>
-                        <Link href="/signup" onClick={() => setIsOpen(false)}>
-                          <Button className="w-full font-medium">Sign Up</Button>
-                        </Link> */}
-                      </>
                     )}
                   </div>
                 </div>
               </SheetContent>
             </Sheet>
           </div>
+
         </div>
       </div>
     </nav>

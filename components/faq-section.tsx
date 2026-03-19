@@ -1,55 +1,54 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-
 const faqs = [
   {
-    question: "How do I book a flight or rental car?",
+    question: "How do I book a rental car?",
     answer:
-      "Use our search form to enter your travel details. Browse available options, select your preferred choice, and complete the booking process securely. We act as a booking facilitator, connecting you with the airline or rental provider.",
+      "You can call our support team or submit a request through our platform. Our agent will assist you in finding available car rental options and complete the booking on your behalf.",
   },
   {
-    question: "How do I book a hotel?",
+    question: "Do I need to search and book online?",
     answer:
-      "Search for your destination, dates, and number of guests. Choose a hotel from the options displayed and complete your booking securely. We facilitate the booking with the hotel, but hotel policies apply directly.",
+      "No. Our process is agent-assisted. You share your requirements, and our team handles the search, comparison, and booking with rental providers.",
   },
   {
-    question: "Can I cancel or modify my flight or car booking?",
+    question: "How will I receive booking details?",
     answer:
-      "Cancellation or modification is subject to the airline or provider's policy. Most providers allow changes or cancellations through our platform, but refunds are processed according to their rules. We can assist you in securing waivers when applicable.",
+      "Once your booking is confirmed, you will receive a confirmation via email or WhatsApp with all relevant details, including pickup location and provider information.",
   },
   {
-    question: "Can I cancel or modify my hotel booking?",
+    question: "Can I cancel or modify my booking?",
     answer:
-      "Hotel cancellations and modifications are subject to the hotel's own policy. Some bookings may be non-refundable or time-sensitive. Our platform helps you communicate with the hotel to request changes or refunds.",
+      "Cancellations or modifications depend on the rental provider’s policy. Our team can assist in raising requests, but approval and charges are determined by the provider.",
   },
   {
     question: "What payment methods do you accept?",
     answer:
-      "We accept all major credit cards (Visa, Mastercard, American Express), debit cards, and PayPal. All transactions are encrypted and secure. Your payment is transferred to the respective airline, hotel, or car provider.",
+      "We accept payments via secure payment links shared by our agents. Additional charges such as deposits may be required directly by the rental provider at pickup.",
   },
   {
-    question: "How do I receive my booking confirmation?",
+    question: "Is a security deposit required?",
     answer:
-      "After booking, you'll receive a confirmation email from our platform containing your booking details, reference number, and any vouchers. The airline, hotel, or provider may also send direct confirmations.",
+      "Yes, most rental providers require a refundable security deposit at pickup. This is managed entirely by the provider.",
   },
   {
-    question: "What happens if my flight or hotel is cancelled by the provider?",
+    question: "What documents are required?",
     answer:
-      "If a provider cancels, their own policies determine your eligibility for refunds or rebooking. We assist you in processing refunds or arranging alternatives whenever possible.",
+      "You must provide a valid driving license, ID proof, and any additional documents required by the rental provider at the time of pickup.",
   },
   {
-    question: "Is my personal information secure?",
+    question: "What happens if the provider cancels my booking?",
     answer:
-      "Yes. We use advanced encryption and security measures to protect your personal and payment information. Your data is never shared with third parties except to facilitate bookings.",
+      "If the rental provider cancels, we will assist in arranging alternatives or processing refunds as per the provider’s policy.",
   },
   {
-    question: "Do you offer customer support?",
+    question: "Do you provide customer support?",
     answer:
-      "Yes, our support team is available 24/7 to help with any booking issues, clarifications on cancellations, or refund requests. You can reach us via phone, email, or live chat.",
+      "Yes, our team is available to assist with booking, coordination, and provider communication.",
   },
   {
     question: "How do refunds work?",
     answer:
-      "Refunds are handled according to the provider's rules. Once approved, they are processed via your original payment method. We facilitate communication and waivers where possible to help expedite the process.",
+      "Refunds are subject to the rental provider’s policy. Our team assists in initiating requests, but timelines and approvals are controlled by the provider.",
   },
 ];
 

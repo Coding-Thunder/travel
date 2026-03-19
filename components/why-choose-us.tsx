@@ -1,38 +1,36 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Zap, Shield, DollarSign, Clock } from "lucide-react"
 import HeaderLine from "./HeaderLine"
-
 const features = [
   {
     icon: Zap,
-    title: "Fast Booking",
-    description: "Book your flights and cars in minutes with our streamlined process",
+    title: "Instant Car Booking",
+    description: "Search, compare, and book rental cars in minutes with a seamless process",
     color: "text-blue-800",
     bgColor: "bg-blue-50",
   },
   {
     icon: Shield,
-    title: "Trusted Providers",
-    description: "We partner with the most reliable airlines and car rental companies",
+    title: "Verified Rental Partners",
+    description: "We connect you with reliable car rental providers for consistent service",
     color: "text-emerald-600",
     bgColor: "bg-emerald-50",
   },
   {
     icon: DollarSign,
-    title: "Best Prices",
-    description: "Compare prices from multiple providers to get the best deals",
+    title: "Transparent Pricing",
+    description: "Compare multiple rental options with clear pricing and no hidden surprises",
     color: "text-amber-600",
     bgColor: "bg-amber-50",
   },
   {
     icon: Clock,
-    title: "24/7 Support",
-    description: "Our customer support team is always here to help you with easy refunds",
+    title: "Booking Support",
+    description: "Get assistance with bookings and coordination with rental providers when needed",
     color: "text-purple-600",
     bgColor: "bg-purple-50",
   },
 ]
-
 export function WhyChooseUs() {
   return (
     <>

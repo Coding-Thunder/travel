@@ -9,28 +9,27 @@ const reviews = [
     id: 1,
     name: "Sarah Johnson",
     rating: 5,
-    text: "Booked a hotel and flight for my business trip through RentalConfirmation.com4U. Everything was smooth and prices were competitive. The OTA platform made it super easy!",
+    text: "Booked a rental car for my business trip through RentalConfirmation.com. The process was smooth, and I got a good deal compared to other platforms.",
   },
   {
     id: 2,
     name: "Michael Chen",
     rating: 5,
-    text: "Used RentalConfirmation.com4U to book multiple flights and hotels. The booking process was seamless, and I received instant confirmations for all my reservations. Highly recommend this OTA!",
+    text: "Used RentalConfirmation.com to compare multiple car rental options. Booking was quick, and confirmation came through without any issues.",
   },
   {
     id: 3,
     name: "Emily Rodriguez",
     rating: 4,
-    text: "Found amazing hotel deals and flights for my family vacation on RentalConfirmation.com4U. The OTA interface is intuitive, and the support team helped me with cancellations and modifications.",
+    text: "Found a great car for our family trip. The platform is easy to use, and support helped coordinate with the rental provider when needed.",
   },
   {
     id: 4,
     name: "David Thompson",
     rating: 5,
-    text: "Booked flights and multiple hotel rooms for our corporate team via RentalConfirmation.com4U. As an OTA, they made managing group bookings and payment hassle-free.",
+    text: "Booked multiple rental cars for our team. The platform made it easy to manage bookings and compare options across providers.",
   },
 ];
-
 
 export function ReviewsSection() {
   const [currentIndex, setCurrentIndex] = useState(0)

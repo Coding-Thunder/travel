@@ -14,37 +14,41 @@ const TermsAndConditionsPage: React.FC = () => {
   });
 
   const generalTerms = [
-    "By using rentalconfirmation.com, you agree to comply with these Terms and Conditions.",
-    "You must provide accurate information when creating an account, making bookings, or communicating with our support team.",
-    "You are responsible for keeping your account credentials confidential and notifying us of any unauthorized access.",
-    "rentalconfirmation.com acts as a travel aggregator/mediator. We do not operate flights or car rentals directly.",
-    "All bookings are subject to provider rules, pricing, availability, and restrictions.",
-    "We reserve the right to modify these Terms and Conditions at any time. Updates will be posted on this page.",
+    "By accessing or using rentalconfirmation.com, you agree to be legally bound by these Terms and Conditions.",
+    "rentalconfirmation.com acts solely as an online travel aggregator (OTA) and intermediary for car rental bookings. We do not own, operate, or control any vehicles or rental services.",
+    "All car rental services are provided by independent third-party rental providers, and are subject to their respective terms, conditions, and policies.",
+    "You agree to provide accurate, complete, and up-to-date information during booking and account usage.",
+    "We reserve the right to modify, suspend, or terminate access to our platform or services at any time without prior notice.",
+    "We may update these Terms from time to time. Continued use of the platform constitutes acceptance of the revised Terms."
   ];
 
   const bookingTerms = [
-    "All bookings for flights or car rentals are subject to availability at the time of booking.",
-    "You must comply with provider rules regarding ticketing, check-in, and vehicle usage.",
-    `Booking confirmations are only valid after the provider issues confirmation. Contact us if you do not receive it.`,
-    "Cancellations, changes, and refunds are governed by provider rules. See our Cancellation & Refund Policy for details.",
-    "Travelers are responsible for valid travel documents (passport, visa, inoculation, etc.) and timely arrival at the departure or pickup location.",
-    "Pricing errors or technical issues may be corrected before booking confirmation. You are not obligated to accept a booking at an erroneous price.",
+    "All car rental bookings are subject to real-time availability and confirmation by the respective rental provider.",
+    "A booking is considered confirmed only after full payment is received and confirmation is issued by the rental provider.",
+    "Users must comply with all rental provider requirements, including valid driving license, age restrictions, identity verification, and security deposit conditions.",
+    "Vehicle type, model, fuel policy, mileage limits, and additional charges are determined solely by the rental provider.",
+    "rentalconfirmation.com is not responsible for vehicle condition, availability at pickup, or any changes made by the provider.",
+    "In case of unavailability after booking, the provider may offer an alternative vehicle or cancel the booking with applicable refund as per their policy.",
+    "Users are responsible for timely pickup and return of the vehicle. Delays may result in additional charges imposed by the provider."
   ];
 
   const userResponsibilities = [
-    "You agree to pay all charges associated with your booking, including surcharges, fees, and taxes.",
-    "You must not engage in fraudulent activities or attempt to bypass provider rules.",
-    "Unauthorized use of our platform may result in account suspension or legal action.",
-    "You are responsible for all communications, notifications, and follow-ups with providers if required.",
-    "You may not transfer bookings to third parties without explicit permission from the provider.",
+    "You agree to pay all applicable charges, including rental fees, security deposits, insurance, penalties, and applicable taxes.",
+    "You are solely responsible for the proper use of the rented vehicle and compliance with all traffic laws and regulations.",
+    "Any damages, fines, theft, accidents, or misuse of the vehicle during the rental period are the sole responsibility of the user and governed by the provider’s policies.",
+    "You must not engage in fraudulent activities, false bookings, or misuse of the platform.",
+    "You may not transfer or sub-rent the vehicle to any third party unless explicitly permitted by the rental provider.",
+    "You are responsible for reviewing and accepting the rental provider’s terms before confirming the booking."
   ];
 
   const legalTerms = [
-    "rentalconfirmation.com is not liable for delays, cancellations, or other service disruptions caused by providers.",
-    "We do not guarantee refunds or compensation beyond what the provider permits.",
-    "By using our platform, you waive claims against rentalconfirmation.com for any indirect, incidental, or consequential damages.",
-    "All disputes will be resolved under the applicable laws of our operating jurisdiction.",
-    "We may share information with service providers or law enforcement if required by law or for security purposes.",
+    "rentalconfirmation.com acts solely as an intermediary and shall not be held liable for any acts, errors, omissions, representations, warranties, breaches, or negligence of any rental provider.",
+    "We are not responsible for vehicle condition, breakdowns, accidents, injuries, delays, cancellations, or any service deficiencies.",
+    "To the maximum extent permitted by law, rentalconfirmation.com shall not be liable for any direct, indirect, incidental, special, or consequential damages arising from the use of our platform.",
+    "Our total liability, if any, shall not exceed the total booking amount paid by the user.",
+    "We are not responsible for any technical failures, including but not limited to website downtime, API failures, or payment gateway issues.",
+    "Users agree to indemnify and hold harmless rentalconfirmation.com, its affiliates, and employees from any claims, damages, losses, or liabilities arising from their use of the platform or violation of these Terms.",
+    "All disputes shall be governed by the laws of India, and subject to the exclusive jurisdiction of courts in Delhi."
   ];
 
   const handlePrint = () => {

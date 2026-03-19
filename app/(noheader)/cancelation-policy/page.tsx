@@ -6,68 +6,49 @@ import { siteConfig } from "@/lib/config";
 
 export default function CancellationPolicyPage() {
   const term1 = [
-    "Bookings cannot be canceled once confirmed within 24 hours, but in exceptional cases like medical emergencies, cancellations can be processed with applicable fees.",
-    "Acceptance of alternative arrangements is required when suggested by rentalconfirmation.com as your mediator.",
-    "You may choose an alternative trip of similar standard if available. The alternative trip is treated as a new booking, and rentalconfirmation.com will coordinate with the airline, hotel, or car rental provider for compensation or refunds related to your original booking.",
-    "Accepting a cancellation or canceling directly allows a refund only if the relevant provider’s (airline, hotel, or car rental) policy permits it. Refunds are subject to provider approval and applicable service charges.",
-    "Each booking is governed by the refund and cancellation terms of both rentalconfirmation.com and the respective provider. By booking, you agree to abide by both.",
+    "Car rental bookings cannot be canceled or modified once confirmed, unless permitted by the respective rental provider’s policy.",
+    "In exceptional cases (e.g., medical emergencies), cancellation requests may be considered subject to provider approval and applicable fees.",
+    "rentalconfirmation.com acts solely as an intermediary and may assist in communicating alternative arrangements, but acceptance of such alternatives is at the user’s discretion.",
+    "Any approved modification or rebooking will be treated as a new booking and may involve additional charges, rate differences, or penalties as defined by the rental provider.",
+    "Refund eligibility is strictly governed by the rental provider’s cancellation policy. rentalconfirmation.com does not guarantee refunds under any circumstances.",
   ];
-
 
   const term2 = [
-    "Most airline, hotel, and car rental bookings are non-refundable, non-changeable, and non-cancellable. In limited cases, providers may allow changes for a fee plus any fare or rate difference.",
-    "Flight cancellations depend on airline policies. Some fares are fully refundable, partially refundable, or completely non-refundable. Refunds will only be processed if the airline allows cancellation.",
-    "Hotel cancellations follow the hotel’s individual policy. Some rooms may be non-refundable or subject to cancellation charges.",
-    "Car rental cancellations depend on the rental company’s rules. Advance notice is often required, and late pickups, early returns, or no-shows are generally non-refundable.",
-    "All reservations are subject to provider availability at the time of booking. At least one adult must accompany minors under 18. Children 12 years & above are treated as adults for pricing.",
-    "Each booking is subject to the specific provider’s rules, which may change at any time without prior notice.",
-    `Reservations are not confirmed until the provider issues a booking confirmation. An email will be sent to the registered email address. If not received, please call ${siteConfig.brand.phone} or email Customer Service (${siteConfig.brand.email}) to confirm.`,
-    "Name changes are typically not permitted once the booking is confirmed.",
-    "Confirmed bookings cannot be reassigned to different customers or providers.",
-    "Processing time for bookings may take up to 72 hours.",
-    "Meal, seat, or vehicle preferences are passed to the provider but not guaranteed. Fees for special requests are non-refundable.",
-    "Seats, vehicles, and rooms are allocated automatically based on availability and provider rules.",
-    "Additional fees such as baggage charges, vehicle surcharges, or hotel taxes may apply and are payable directly at the provider location.",
-    "Prices are subject to change until confirmed by the provider.",
-    "A valid phone number and email are required to secure a booking.",
-    "Maximum tickets/bookings per transaction may be limited by provider policies.",
-    "The name on each booking must exactly match the traveler’s valid ID or travel document.",
-    "Travelers are responsible for ensuring valid documents (passport, visa, vaccination, etc.) required by the provider.",
-    "rentalconfirmation.com may request credit card authorization or ID verification. Failure to provide this may result in cancellation.",
-    "In case of a system error or incorrect pricing, rentalconfirmation.com reserves the right to correct the fare before confirmation. You are not obligated to continue with an erroneous booking.",
+    "All car rental bookings are subject to real-time availability and confirmation by the rental provider.",
+    "Most car rental bookings are non-refundable, non-changeable, and non-cancellable unless explicitly stated otherwise.",
+    "Booking confirmation is valid only after the rental provider issues final confirmation. Processing time may take up to 72 hours.",
+    "Users must meet all provider requirements, including valid driving license, age criteria, identity verification, and security deposit conditions.",
+    "Vehicle category, fuel policy, mileage limits, deposit amount, and additional charges are determined solely by the rental provider.",
+    "Late pickup, early return, or no-show will be treated as a completed booking with no refund unless allowed by provider policy.",
+    "Vehicle allocation is subject to availability. Specific models, features, or preferences are not guaranteed.",
+    "Prices are subject to change until final confirmation by the rental provider.",
+    "The name on the booking must exactly match the valid government-issued ID presented at pickup.",
+    "Users are responsible for ensuring all required documents and eligibility conditions are met at the time of pickup.",
+    "rentalconfirmation.com may require additional verification (ID, payment authorization). Failure to comply may result in booking cancellation.",
+    "Bookings cannot be transferred, reassigned, or resold to another individual without provider approval.",
   ];
   const term3 = [
-    "Displayed booking prices exclude surcharges, taxes, and service fees, which appear on the final confirmation screen.",
-    "Charges on your payment method may appear under the provider’s or rentalconfirmation.com’s name.",
-    "Administrative or service processing fees of up to $30 USD per booking may apply.",
-    "All service and processing fees charged by rentalconfirmation.com are strictly non-refundable unless an error is proven to be on our part.",
-    "Customers agree to pay the total displayed trip cost at checkout.",
-    "Phone reservations may include an additional non-refundable service fee (up to $50 USD).",
-    "Service fees may differ for premium classes, international routes, or high-risk destinations.",
-    "In supplier-side cancellations (e.g., airline flight cancellations), refunds are issued per the supplier’s policy. rentalconfirmation.com does not guarantee refund amounts or timelines.",
+    "Displayed prices may exclude applicable taxes, surcharges, insurance, deposits, and service fees, which will be shown at checkout or payable at pickup.",
+    "A refundable security deposit may be required by the rental provider at the time of vehicle pickup. This amount is controlled entirely by the provider.",
+    "rentalconfirmation.com does not hold, control, or process security deposits and is not responsible for deposit refunds.",
+    "All service, convenience, and processing fees charged by rentalconfirmation.com are non-refundable under all circumstances unless an internal error is proven.",
+    "Users agree to pay the total booking amount, including any applicable fees, charges, or penalties.",
+    "Charges may appear under rentalconfirmation.com or the rental provider on your payment method.",
+    "In case of pricing errors, technical issues, or incorrect listings, rentalconfirmation.com reserves the right to cancel bookings and issue a refund.",
   ];
-
   const term4 = [
-    "Refunds are processed only if the provider’s policy allows cancellation and refund.",
-    "No refunds will be issued for no-shows unless explicitly permitted by fare or rate rules.",
-    "rentalconfirmation.com assists in securing waivers from airlines, hotels, or car rental providers to facilitate refund requests.",
-    "Refund timelines depend entirely on the provider’s processing time.",
-    "All refunds are issued after deducting non-refundable service or processing fees.",
-    "To request a cancellation or refund, email support@rentalconfirmation.com with your Booking Reference Number, Full Name, Date of Travel/Booking, and Reason for Cancellation. Response time: 24–48 business hours.",
+    "Refunds are processed only if explicitly permitted under the rental provider’s cancellation policy.",
+    "No refunds will be issued for no-shows, late arrivals, early returns, or unused rental periods unless allowed by the provider.",
+    "All refund requests are subject to provider approval. rentalconfirmation.com does not guarantee refund outcomes or timelines.",
+    "Refund processing timelines are controlled solely by the rental provider, bank, or payment gateway.",
+    "All approved refunds will exclude non-refundable service, processing, or convenience fees.",
+    "rentalconfirmation.com may assist in raising refund or waiver requests with the provider but holds no authority over final decisions.",
   ];
-
-
-  // const term5 = [
-  //   "Service fees apply to all e-tickets and paper bookings.",
-  //   "Paper tickets will incur shipping fees ($25 USD domestic, $45+ USD international) via FedEx or similar service.",
-  //   "PO Boxes cannot be used for paper ticket delivery. A physical address must be provided to process shipping.",
-  //   `Provide your address via email (${BUSINESS.emails.main}) or call us at ${BUSINESS.phone.display}.`,
-  // ];
 
   const term6 = [
-    "Customers agree not to dispute fees if rentalconfirmation.com and providers have followed applicable policies.",
-    `For questions about charges, call ${siteConfig.brand.phone} or email Customer Service (${siteConfig.brand.email}) before disputing.`,
-    "Unauthorized chargebacks may incur penalties and legal/collection costs.",
+    "Users agree not to initiate chargebacks or payment disputes without first contacting rentalconfirmation.com for resolution.",
+    "If a chargeback is initiated without valid grounds and the booking complies with provider policies, the user may be liable for penalties, recovery costs, and legal action.",
+    "Fraudulent transactions, misuse of payment methods, or abuse of refund policies may result in account suspension and reporting to relevant authorities.",
   ];
 
   return (
