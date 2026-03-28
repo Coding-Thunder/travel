@@ -19,7 +19,7 @@ export function Footer() {
             <p className="text-sm mb-6 leading-relaxed text-slate-400">
               Your trusted partner for travel bookings worldwide. Experience seamless booking with the best prices.
             </p>
-            {/* <p className="text-xs text-slate-500">Powered by {siteConfig.brand.poweredBy}</p> */}
+            <p className="text-xs text-slate-500">Powered by {siteConfig.brand.poweredBy}</p>
           </div>
 
           {/* Contact Info */}
