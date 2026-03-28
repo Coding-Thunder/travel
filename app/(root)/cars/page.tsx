@@ -164,7 +164,6 @@ export default function CarsPage() {
     currentPage * offersPerPage
   );
 
-  // ✅ Smooth scroll once offers are available
   useEffect(() => {
     if (!loading && offers.length > 0) {
       const timer = setTimeout(() => {
@@ -185,6 +184,7 @@ export default function CarsPage() {
       setError(null);
       try {
         const data = await apiService.getTransferOffers(searchCriteria);
+        console.log(data,"cars")
 
         // Process offers: adjust price +30 USD and min seats = 4
         const adjustedOffers = (data.data || []).map((offer: any) => {

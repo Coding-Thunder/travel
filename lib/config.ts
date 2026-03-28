@@ -43,7 +43,7 @@ export const siteConfig = {
   api: {
     baseUrl: process.env.NODE_ENV === "production" ? "https://api.rentalconfirmation.com" : "https://api.rentalconfirmation.com",
   },
-  productionServerUrl: "https://api.rentalconfirmation.com",
+  productionServerUrl: "https://serverutickets-54hef.ondigitalocean.app/",
   localServerUrl: "http://localhost:3002",
   prodLocalServerUrl: "http://127.0.0.1:3002",
 

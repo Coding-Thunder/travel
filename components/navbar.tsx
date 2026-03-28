@@ -39,7 +39,10 @@ export function Navbar() {
     { href: "/support", label: "Contact" },
     // { href: "/destinations", label: "Destinations" },
     { href: "/deals", label: "Deals" },
+    { href: "/login", label: "Login" },
+    { href: "/signup", label: "Sign Up" },
   ]
+
 
   const handleNavClick = () => {
     setIsOpen(false)
@@ -67,6 +70,7 @@ export function Navbar() {
                 </Button>
               </Link>
             ))}
+
           </div>
 
           {/* Desktop Auth */}
