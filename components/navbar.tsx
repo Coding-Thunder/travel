@@ -22,6 +22,7 @@ import {
 import { useState } from "react"
 import Image from "next/image"
 import { Logo } from "./Common/Logo"
+import { routings } from "@/lib/utils"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -130,14 +131,14 @@ export function Navbar() {
                 <SheetHeader>
                   <SheetTitle>
                     <div className="relative w-28 h-28">
- <Link href="/" className="flex items-center gap-3">
-            <Logo />
-          </Link>                    </div>
+                      <Link href="/" className="flex items-center gap-3">
+                        <Logo />
+                      </Link>                    </div>
                   </SheetTitle>
                 </SheetHeader>
 
                 <div className="flex flex-col gap-4 mt-6">
-                  
+
                   {/* Nav Links */}
                   {navLinks.map((link) => (
                     <Link
@@ -149,6 +150,30 @@ export function Navbar() {
                       {link.label}
                     </Link>
                   ))}
+                  <Link
+                    key={routings.terms_and_conditions}
+                    href={routings.terms_and_conditions}
+                    onClick={handleNavClick}
+                    className="text-lg font-medium text-gray-900 hover:text-primary py-2"
+                  >
+                    Terms & Conditions
+                  </Link>
+                  <Link
+                    key={routings.privacy_policy}
+                    href={routings.privacy_policy}
+                    onClick={handleNavClick}
+                    className="text-lg font-medium text-gray-900 hover:text-primary py-2"
+                  >
+                    Privacy Policy
+                  </Link>
+                  <Link
+                    key={routings.cancelation_policy}
+                    href={routings.cancelation_policy}
+                    onClick={handleNavClick}
+                    className="text-lg font-medium text-gray-900 hover:text-primary py-2"
+                  >
+                    Cancellations & Refund
+                  </Link>
 
                   {/* Auth Section */}
                   <div className="pt-4 border-t space-y-3">

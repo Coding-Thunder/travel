@@ -53,8 +53,7 @@ export function HeroSection() {
             Find Your Next Adventure
           </h1>
           <p className="text-xl md:text-2xl text-white/95 drop-shadow-lg font-medium">
-            Compare and book flights, hotels, and car rentals
-          </p>
+            Compare and book the best car rentals effortlessly          </p>
         </div>
 
         <Tabs defaultValue="cars" className="w-full">
