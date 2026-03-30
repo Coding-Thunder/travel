@@ -38,7 +38,7 @@ export function Navbar() {
     { href: "/about", label: "About us" },
     { href: "/support", label: "Contact" },
     // { href: "/destinations", label: "Destinations" },
-    { href: "/deals", label: "Deals" },
+    // { href: "/deals", label: "Deals" },
     { href: "/login", label: "Login" },
     { href: "/signup", label: "Sign Up" },
   ]
@@ -130,8 +130,9 @@ export function Navbar() {
                 <SheetHeader>
                   <SheetTitle>
                     <div className="relative w-28 h-28">
-                      <Image src="/logo3.png" alt="Logo" fill />
-                    </div>
+ <Link href="/" className="flex items-center gap-3">
+            <Logo />
+          </Link>                    </div>
                   </SheetTitle>
                 </SheetHeader>
 
